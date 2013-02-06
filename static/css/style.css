@@ -16,3 +16,37 @@ body {
 	height: 40px;
 	left: 0;
 }
+#main-tab-nav {
+	margin: 0 0 0 0;
+}
+
+#main-tab-nav .nav {
+	margin-top: 100px;
+	border: none;
+}
+
+#main-tab-nav .nav li {
+	height: 40px;
+	background: url('../img/navy_blue.png');
+	border: none;
+}
+
+#main-tab-nav .nav li.active > a {
+	background: none;
+	border: none;
+}
+#main-tab-nav .nav li > a {
+	margin: 20px 0;	
+}
+
+#main-tab-nav .tab-content {
+	background: url('../img/paper_fibers.png');
+	height: 700px;
+	width:912px;
+	opacity: 0.7;
+}
+
+
+.footer img {
+	float: right;
+}
