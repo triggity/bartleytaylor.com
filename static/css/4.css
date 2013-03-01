@@ -1,0 +1,105 @@
+body {
+	background: url('../img/oscars.jpg') no-repeat;
+}
+
+
+
+#idea {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	background: #000;
+	width: 100%;
+	height: 40px;
+	left: 0;
+}
+
+
+.footer img {
+	float: right;
+	background-color: black;
+}
+
+#three.footer {
+	position: static;
+	background: none;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	background: #000;
+	width: 100%;
+	height: 40px;
+	left: 0;
+}
+.header span {
+	float: right;
+	margin: 10px 10px 0 0;
+	color: #fff;
+}
+.header > img {
+	float: left;
+}
+
+.fuckthisshit {
+	text-align: center;
+	margin: 25px 0;
+}
+
+#main-tab-nav {
+	margin: 0 0 0 0;
+}
+
+#main-tab-nav .nav {
+	margin-top: 100px;
+	border: none;
+}
+
+#main-tab-nav .nav li {
+	height: 40px;
+	background: url('../img/navy_blue.png');
+	border: none;
+}
+
+#main-tab-nav .nav li.active > a {
+	background: none;
+	border: none;
+}
+#main-tab-nav .nav li > a {
+	margin: 20px 0;	
+}
+
+#main-tab-nav .tab-content {
+	/* background: url('../img/paper_fibers.png'); */
+	height: 700px;
+	width:912px;
+	opacity: 0.7;
+}
+
+
+
+#navstuff {
+
+	width: 50%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+#navstuff > div {
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+}
+
+#container {
+	color: rgb(41,41,41);
+}
+.loremipsum {
+	margin-top: 15px;
+}
