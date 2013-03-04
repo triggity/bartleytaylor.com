@@ -22,7 +22,7 @@
 	font-weight: bold;
 }
 
-#container { font-family: champagne; }
+
 
 
 
@@ -31,7 +31,16 @@
 body {
 	background: url('../img/oscars.jpg') no-repeat;
 }
+#container { font-family: champagne; }
+#container2, #container, #container3, #container4 {
+	height:1100px;
+	width:100%;
+	
+}
 
+#container2 { background: #9b70c0;}	
+#container3 { background: #000;}
+#container4 { background: #a9a9a9;}
 
 
 /* footer stuff */
