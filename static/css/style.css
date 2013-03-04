@@ -34,12 +34,7 @@ body {
 
 
 
-
-#idea {
-    height: 100px;
-    width: 100px;
-    background-color: black;
-}
+/* footer stuff */
 .footer {
 	position: fixed;
 	bottom: 0;
@@ -56,30 +51,28 @@ body {
 }
 
 
-
-.fuckthisshit {
+.main-title {
 	text-align: center;
 	margin: 25px 0;
 }
 
+.sample-text {
 
-#navstuff {
+	margin-top: 15px;
+
+}
+
+#nav {
 
 	width: 50%;
 	margin: 0 auto;
 	font-weight: bold;
 }
 
-#navstuff > div {
+#nav > div {
 	width: 25%;
 	float: left;
 	text-align: center;
 	margin-top: 15px;
 }
 
-#container {
-	color: rgb(41,41,41);
-}
-.loremipsum {
-	margin-top: 15px;
-}
