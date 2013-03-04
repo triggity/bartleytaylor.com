@@ -1,6 +1,37 @@
+@font-face {
+	font-family: champagne;
+	src: url('fonts/champagne_limousines/Champagne & Limousines.ttf');
+}
+
+@font-face {
+	font-family: champagne;
+	src: url('fonts/champagne_limousines/Champagne & Limousines Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: champagne;
+	src: url('fonts/champagne_limousines/Champagne & Limousines Italic.ttf');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: champagne;
+	src: url('fonts/champagne_limousines/Champagne & Limousines Bold Italic.ttf');
+	font-style: italic;
+	font-weight: bold;
+}
+
+#container { font-family: champagne; }
+
+
+
+
+
 body {
 	background: url('../img/oscars.jpg') no-repeat;
 }
+
 
 
 
