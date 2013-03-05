@@ -29,7 +29,7 @@
 
 
 body {
-/*	background: url('../img/oscars.jpg') no-repeat; */
+	background: url('../img/oscars.jpg') no-repeat;
 }
 #container { font-family: champagne; }
 #container2, #container, #container3, #container4 {
@@ -92,7 +92,7 @@ body {
 .art-header {
   height: 900px;
   /* Background image is defined in the post */
-  background-position: top center;
+  /*background-position: top center;*/
   background-attachment: fixed;
   overflow: hidden;
 }
