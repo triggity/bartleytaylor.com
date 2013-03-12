@@ -39,7 +39,10 @@ body {
 }
 
 #container2 { background: #9b70c0;}	
-#container3 { background: #000;}
+#container3 { 
+	background: url('../img/paper_fibers.png');
+	margin: 0 auto;
+}
 #container4 { background: #a9a9a9;}
 
 
@@ -65,6 +68,11 @@ body {
 	margin: 25px 0;
 	font-size: 48px;
 }
+.sub-title {
+	text-align: center;
+	font-style: italic;
+	font-weight: normal;
+}
 
 .sample-text {
 
@@ -85,6 +93,36 @@ body {
 	text-align: center;
 	margin-top: 15px;
 }
+
+.project-gallery {
+	background: url('../img/Helen.png');
+	height: 200px;
+	text-align: center;
+}
+.project-gallery:hover {
+	background: red;
+	opacity: 50%;
+}
+.project-gallery h2 {
+	margin: 100px 0;
+	color: white;
+}
+
+#container3 .gallery-container {
+	margin: 2% 13% 0;
+}
+#container3 .gallery-container.first {
+	border-top: 1px solid black;
+}
+
+
+.projects-presentation {
+	border-bottom: 1px solid black;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
 /* gamache styles */
 
 
@@ -114,4 +152,5 @@ body {
 .art-header-inner {
     margin-top: 150px !important;
   }
+
 
