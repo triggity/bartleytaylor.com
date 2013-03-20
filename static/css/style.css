@@ -153,4 +153,30 @@ body {
     margin-top: 150px !important;
   }
 
+.reel-photo {
+	margin: 0 auto;
+	display: block;
+}
+.reel-intro {
+	margin: 10px 15% 25px;
+	text-align: center;
+	
+}
+.contact-form {
+	padding: 10px 5px;
+	margin-left: 5px;
 
+}
+.contact-form > input, .contact-form > textarea {
+	display: block;
+	width: 100%;
+}
+.contact-form button {
+	float: right;
+
+}
+.social-media {
+	margin: 50px;
+	padding-top: 20px;
+	border-top: 1px solid black;
+}
