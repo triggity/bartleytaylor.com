@@ -175,6 +175,8 @@ body {
 	float: right;
 
 }
-.social-media > div{
-	margin: 10px 0;
+.social-media {
+	margin: 50px;
+	padding-top: 20px;
+	border-top: 1px solid black;
 }
