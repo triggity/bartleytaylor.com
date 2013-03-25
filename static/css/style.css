@@ -31,7 +31,9 @@
 body {
 	background: url('../img/oscars.jpg') no-repeat;
 }
-#container { font-family: champagne; }
+#container { font-family: champagne; 
+	background: url('../img/paper_fibers.png');
+}
 #container2, #container, #container3, #container4 {
 	height:900px;
 	width:100%;
@@ -65,7 +67,7 @@ body {
 
 .main-title {
 	text-align: center;
-	margin: 25px 0;
+	margin: 50px 0;
 	font-size: 48px;
 }
 .sub-title {
@@ -74,12 +76,18 @@ body {
 	font-weight: normal;
 }
 
-.sample-text {
-
-	margin-top: 15px;
-
+.home-text {
+    text-align: center;
+	margin-top: 50px;
+}
+.home-text > h2 {
+    margin: 10px auto;
 }
 
+.sample-text {
+	margin-top: 30px;
+    text-align: center;
+}
 #nav {
 
 	width: 50%;
@@ -95,7 +103,7 @@ body {
 }
 
 .project-gallery {
-	background: url('../img/Helen.png');
+	background: url('../img/Helen.png') no-repeat;
 	height: 200px;
 	text-align: center;
 }
