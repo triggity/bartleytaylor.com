@@ -78,7 +78,7 @@ body {
 
 .home-text {
     text-align: center;
-	margin-top: 50px;
+	margin-top: 100px;
 }
 .home-text > h2 {
     margin: 10px auto;
@@ -102,22 +102,42 @@ body {
 	margin-top: 15px;
 }
 
+.gallery-container .span3 {
+	width: 250px;
+}
+
 .project-gallery {
 	background: url('../img/Helen.png') no-repeat;
-	height: 200px;
+	height: 300px;
 	text-align: center;
 }
 .project-gallery:hover {
-	background: red;
-	opacity: 50%;
+	background: black;
+	opacity: 0.8;
 }
-.project-gallery h2 {
-	margin: 100px 0;
+.project-gallery:hover span{	
 	color: white;
 }
 
+.project-gallery h2 {
+	margin: 100px 0 0;
+	color: white;
+}
+.project-gallery > div {
+	margin: 120px 0 0;
+}
+.project-gallery span {
+	display: block;
+	color: black;
+}
+.project-gallery .position {
+	font-weight: bold;
+	font-size: 120%;
+
+}
+
 #container3 .gallery-container {
-	margin: 2% 13% 0;
+	margin: 2% 15% 0;
 }
 #container3 .gallery-container.first {
 	border-top: 1px solid black;
