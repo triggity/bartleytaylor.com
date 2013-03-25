@@ -88,10 +88,13 @@ body {
 	margin-top: 30px;
     text-align: center;
 }
+.nav-holder {
+	margin-top: 50px;
+}
 #nav {
 
 	width: 50%;
-	margin: 0 auto;
+	margin: 0 25%;
 	font-weight: bold;
 }
 
@@ -178,7 +181,7 @@ body {
 }
 
 .art-header-inner {
-    margin-top: 150px !important;
+    margin-top: 50px !important;
   }
 
 .reel-photo {
