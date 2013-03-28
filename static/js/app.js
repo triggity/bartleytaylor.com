@@ -32,8 +32,10 @@ $(document).ready(function() {
   // Identify if visitor has a large enough viewport for parallaxing title
   function isLargeViewport() {
     if($nav.css('position') == "relative") {
+      //console.log('in false');  
       return false;
     } else {
+      //console.log('in true');  
       return true;
     }
   }
@@ -48,7 +50,11 @@ $(document).ready(function() {
     });
   }
 
-
+  function reShow() {
+    //console.log("in reshow");  
+    $nav.css({
+      'opacity' : 1    });
+  }
   // Window gets large enough, need to recalc all parallaxing title values
   $(window).resize(function() {
     if(isLargeViewport()) {
@@ -70,13 +76,13 @@ $(document).ready(function() {
      
     });
 
-     console.log('inner: ' + windowScroll/3);
+     //console.log('inner: ' + windowScroll/3);
     //Slowly parallax the background of .art-header
     $artHeader.css({
       'background-position' : 'center ' + (windowScroll/8)+"px"
       
     });
-    console.log('header: ' + windowScroll/8);
+    //console.log('header: ' + windowScroll/8);
     //Fade the .nav out
     $nav.css({
       'opacity' : 1-(windowScroll/400)
@@ -93,4 +99,4 @@ $(document).ready(function() {
     $(window).scrollTop(0);
   })
 
-});
+})

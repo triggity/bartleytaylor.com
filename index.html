@@ -22,24 +22,46 @@
         
         <script>
             //$('#nav a').smoothScroll();
+            /*
             $(document).ready(function() {
                 $('#nav a').smoothScroll({ easing: 'linear'});    
             });
+            */
+            (function() {
+                var timer;
+                $(window).bind('scroll', function() {
+                    clearTimeout(timer);
+                    timser = setTimeout(refresh, 500);
+
+                });
+                var refresh = function() {
+                    console.log('stopped scrolling');
+                    var $nav = $('.nav');
+                    $nav.css({'opacity' : 1});
+                }
+            
+            })();
             
         </script>
              
 
-        
-        <header id="container-home" class="row-fluid art-header">
+            <ul id="navigation"class="nav nav-pills navbar-fixed-top ">
+                <li class="active">
+                    <a href="#container">About</a>
+                </li>
+                <li>
+                    <a href="#container2">Reel</a>
+                </li>
+                <li>
+                    <a href="#container3">Projects</a>
+                </li>
+                <li>
+                    <a href="#container4">Contact</a>
+                </li>
+            </ul>
+
+        <header id="container-home" class="row-fluid art-header" style="margin-top: 150px;">
             
-            <div class="span5 offset6 nav-holder"> 
-                 <div id="nav">
-                    <div><a href="#container">About</a></div>
-                    <div><a href="#container2">Reel</a></div>
-                    <div><a href="#container3">Projects</a></div>
-                    <div><a href="#container4">Contact</a></div>
-                </div> 
-            </div>     
             <div class="span5 offset6 art-header-inner">    
                 
                 <h1 class="main-title art-title"> Bartley Taylor </h1>
