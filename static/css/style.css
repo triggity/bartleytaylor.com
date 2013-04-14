@@ -40,8 +40,14 @@ body {
 	background: url('../img/paper_fibers.png');
 	margin: 0 auto;
 }
-#container4 { background: #a9a9a9;}
-
+#container4 { 
+    background: #a9a9a9;
+    
+}
+#container4 .main-title {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
 
 /* footer stuff */
 .footer {
@@ -213,6 +219,7 @@ body {
     -moz-border-radius: 150px;
 	background: url('../img/oscars_small.jpg') no-repeat; 
     border-color: black;
+    margin-top: 50px;
     /*background: url(http://link-to-your/image.jpg) no-repeat;%/
 }
 .contact-form {
