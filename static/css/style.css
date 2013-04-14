@@ -80,8 +80,8 @@ body {
 }
 
 .sample-text {
-	margin-top: 30px;
     text-align: center;
+    margin: 30px 0 auto;
 }
 /*
 .nav-holder {
@@ -108,8 +108,15 @@ body {
 #navigation {
     margin-left: 65%;
     margin-top: 100px;
+    color: #333;
 }    
-
+#navigation a {
+    color: #333;
+}    
+#navigation .active a {
+    background-color: #333;
+    color: white;
+}
 .gallery-container .span3 {
 	width: 250px;
 }
