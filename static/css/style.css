@@ -24,10 +24,12 @@
 
 body {
 
-	 background: url('../img/oscars.jpg') no-repeat; 
+  background: url('../img/Bart_0580F.wv.jpg') no-repeat;
+}
+#container-home {
 }
 #container { font-family: champagne; 
-	background: url('../img/paper_fibers.png');
+  background: url('../img/Bart_0391F.wv.jpg') no-repeat;
 }
 #container2, #container, #container3, #container4, #container-home {
 	height:750px;
@@ -41,7 +43,7 @@ body {
 	margin: 0 auto;
 }
 #container4 { 
-    background: #a9a9a9;
+  background: url('../img/Bart_0706F.wv.jpg') no-repeat;
     
 }
 #container4 .main-title {
