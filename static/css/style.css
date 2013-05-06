@@ -24,16 +24,20 @@
 
 body {
 
-  background: url('../img/Bart_0580F.wv.jpg') no-repeat;
+  height: 100%;
 }
 #container-home {
+  background: url('../img/Bart_0580F.wv.jpg') no-repeat;
+  background-position: left center;
 }
 #container { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
+  background-position: center bottom;
 }
 #container2, #container, #container3, #container4, #container-home {
-	height:750px;
+	height: 1000px;
 	width:100%;
+  border-bottom: 3px solid rgba(0,0,0,0.8);
 	
 }
 
@@ -203,7 +207,14 @@ body {
 .reel-intro {
 	margin: 10px 15% 25px;
 	text-align: center;
-	
+}
+.reel-intro .reel-sub {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.reel-intro iframe{
+  margin-top: 100px
 }
 .circular {
     width: 300px;
@@ -238,5 +249,5 @@ body {
 
 .reel-video{
     float: right;
-    margin: 0 200px 0 0;
+    padding-right: 100px;
 }
