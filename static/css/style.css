@@ -28,7 +28,7 @@ body {
 }
 #container-home {
   background: url('../img/Bart_0580F.wv.jpg') no-repeat;
-  background-position: left center;
+  background-position: left bottom;
 }
 #container { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
@@ -48,11 +48,14 @@ body {
 }
 #container4 { 
   background: url('../img/Bart_0706F.wv.jpg') no-repeat;
+  background-position: left bottom;
     
 }
 #container4 .main-title {
     border-bottom: 1px solid black;
     padding-bottom: 15px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 /* footer stuff */
@@ -215,4 +218,7 @@ body {
 .reel-video{
     float: right;
     padding-right: 100px;
+}
+#container3 .thumbnails.offset2{
+  margin-left: 234px;
 }
