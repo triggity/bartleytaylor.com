@@ -32,7 +32,7 @@ body {
 }
 #container { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
-  background-position: center bottom;
+  background-position: right bottom;
 }
 #container2, #container, #container3, #container4, #container-home {
 	height: 1000px;
@@ -54,7 +54,8 @@ body {
 #container4 .main-title {
     border-bottom: 1px solid black;
     padding-bottom: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
 }
 
@@ -94,32 +95,24 @@ body {
     margin: 10px auto;
 }
 
-.sample-text {
-    text-align: center;
+.about-text {
     margin: 30px 0 auto;
-    font-size: 16px;
+    font-size: 24px;
+    line-height: 110%;
 }
-/*
-.nav-holder {
-	margin-top: 50px;
-    position: fixed;;
-    top: 50px;
-    left: 60%;
+.about-text p {
 }
-#nav {
-
-	width: 50%;
-	margin: 0 25%;
-	font-weight: bold;
+.about-text .first-line {
+  font-weight: bold;
+  font-size: 30px; 
+  margin-bottom: 25px;
 }
-
-#nav > div {
-	width: 25%;
-	float: left;
-	text-align: center;
-	margin-top: 15px;
+#nav .title {
+  color: white;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
 }
-*/
 
 #nav .nav{
   float: right;
