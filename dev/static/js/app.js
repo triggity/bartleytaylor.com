@@ -24,6 +24,12 @@ $(document).ready(function() {
   var $nav = $('.nav');
   var windowScroll;
 
+  //initial y
+  var hi = $artHeader.css("background-position"); 
+  //var y = parseInt(hi.split(" ")[1].replace(/[A-Za-z$-]/g, ""));
+  y = $artHeader.height();
+  console.log("initial y: " + y);
+
   // Apply Fittext to article titles to make it scale responsively in a smooth fashion
   $artTitle.fitText(1, { minFontSize: '34px' });
 
@@ -65,8 +71,11 @@ $(document).ready(function() {
     });
 
     //Slowly parallax the background of .art-header
+    var move = y - 683 + (windowScroll/2);
+    console.log("bgp: " + move);
     $artHeader.css({
-      'background-position' : 'center ' + (windowScroll)+"px"
+      'background-position' : 'left ' + move+"px"
+      //'background-position' : 'center ' + (windowScroll)+"px"
     });
     console.log(
     $artHeader.css(
@@ -75,9 +84,9 @@ $(document).ready(function() {
     );
 
     //Fade the .nav out
-    $nav.css({
-      'opacity' : 1-(windowScroll/400)
-    });
+    //$nav.css({
+    //  'opacity' : 1-(windowScroll/400)
+    //});
   }
 
   // Link to top of page without changing URL
