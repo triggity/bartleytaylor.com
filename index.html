@@ -1,250 +1,39 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Bartley Taylor</title>
-        
-        <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="static/css/lib/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="static/css/lib/jquery.fancybox.css"/>
-        <link href="static/css/lib/bootstrap-responsive.min.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="dev/static/css/lib/bootstrap.min.css"/>
 
-        <script type="text/javascript" src="static/js/lib/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="static/js/lib/bootstrap.js"></script>
-        <script type="text/javascript" src="static/js/lib/jquery.fancybox.js"></script>
-        <script src="static/js/lib/holder.js"></script>
-        <script src="static/js/lib/jquery.smooth-scroll.js"></script>
-        <script src="static/js/lib/jquery.fittext.js"></script>
-        <script src="static/js/lib/respond.min.js"></script>
-        <script type="text/javascript" src="static/js/app.js"></script>
-	<!-- Add Media helper (this is optional) -->
-	<script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
-        
     </head>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      h1, h2 {
+        text-align: center;  
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
     <body>
+      <div class="row-fluid">
+        <div class="span8 offset2">
+        
+          <h1>A redesigned website is coming soon - thanks for visiting! </h1>
+          <h2> BartleyTaylor.com</h2>
+          <img src="bart.jpeg" class="img-polaroid">
+        </div>
+      </div>
 
         
-        <script>
-           
-            $(document).ready(function() {
-                $('#nav a').smoothScroll({ easing: 'linear'});    
-            });
-            
-            $(document).ready(function() {
-                    $('.fancybox').fancybox({
-                        padding : 0,
-                        openEffect  : 'elastic'
-                    });
-                    $('.fancybox-media').fancybox({
-                        openEffect  : 'none',
-                        closeEffect : 'none',
-                        helpers : {
-                            media : {}
-                        }
-                    });
-            });
-            
-        </script>
-             
-
-            <div id="nav"class="navbar navbar-inverse navbar-fixed-top">
-              <div class="navbar-inner">
-                <span class="title">BartleyTaylor.com</span> 
-              <ul class="nav">
-                <li >
-                    <a href="#container-home">Welcome</a>
-                </li>
-                <li >
-                    <a href="#container">About</a>
-                </li>
-                <li>
-                    <a href="#container2">Reel</a>
-                </li>
-                <li>
-                    <a href="#container3">Projects</a>
-                </li>
-                <li>
-                    <a href="#container4">Contact</a>
-                </li>
-              </ul>
-            </div>
-            </div>
-        <header id="container-home" class="art-header">
-            
-
-            <div class="span5 offset6 art-header-inner">    
-                
-                <h1 class="main-title art-title"> Bartley Taylor </h1>
-
-
-                <div class="home-text art-subtitle">
-                        <h2>Director</h2>
-                        <h2>Producer</h2>
-                        <h2>Actor</h2>
-                </div>    
-            </div>
-    	</header>
-        <div id="container" class="row-fluid ">
-            
-
-            <div class="span10 offset1">    
-                <h1 class="main-title "> About</h1>
-
-
-                <div class="about-text span6">
-                    <p class="first-line">
-                    Hey! I'm Bartley, or Bart, It's strange to say my own full first name. Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
-                    </p>
-                    <p>
-                    I was born and raised in this <strike>shitty </strike>great city of Los Angeles.
-                    I knew from a young age that I wanted to make movies - rather, tell stories.
-                    I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed.
-                    That naturally evolved into a love of cinema and actors.
-                    I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors as opposed to being one.
-                    I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions./
-                    Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients.                     Now <strike>starving</strike> operating as a freelance director, I am constantly looking to expand my horizons as a creative force with in the industry. 
-                    </p>
-                    <p>
-                    When I'm not wracking my brain with how to stay relevant and getting another gig, I'm usually outside with my dogs, having brunch with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others, life begins at the end of your comfort zone.
-                    </p>
-                </div>  
-            </div>
-    	</div>
-
-        <div id="container2" class="row-fluid">
-
-            <div class="span12">    
-                <h1 class="main-title">Reel</h1>
-               
-                <div class="reel-intro">
-                  <p class="reel-sub">A Selected Compilation of works featured by BartleyTaylor</p>
-                    <iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
-                   
-                </div>
-                
-
-            </div>
-        </div>
-        <div id="container3" class="row">
-           <!--<div class="span12"> -->   
-           <h1 class="main-title">  Projects </h1>
-           <h4 class="sub-title"> - Selection of Previous Projects-</h4>
-           <div class="projects-presentation"></div>
-
-           <ul class="thumbnails span14 offset2">
-            <!-- thunmbnail type 2 -->
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
-               <div class="caption">
-                  <h3>Walk The Moon</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="http://player.vimeo.com/video/64045082" class="btn fancybox-media" type="button"> Play </a>
-               </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
-               <div class="caption">
-                  <h3>Walk The Moon</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="http://player.vimeo.com/video/64045082" class="btn fancybox-media" type="button"> Play </a>
-               </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
-               <div class="caption">
-                  <h3>Walk The Moon</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="http://player.vimeo.com/video/64045082" class="btn fancybox-media" type="button"> Play </a>
-               </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/SmellyProof.png" alt="Smelly Proof">
-               <div class="caption">
-               <h3>Smelly Proof</h3>
-               <p>Thumbnail caption...</p>
-               <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" type="button"> Play </a>
-             </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/SmellyProof.png" alt="Smelly Proof">
-               <div class="caption">
-               <h3>Smelly Proof</h3>
-               <p>Thumbnail caption...</p>
-               <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" type="button"> Play </a>
-             </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
-               <div class="caption">
-                  <h3>Walk The Moon</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="http://player.vimeo.com/video/64045082" class="btn fancybox-media" type="button"> Play </a>
-               </div>
-             </div>
-             </li>
-
-
-
-           </ul>
-         
-         
-         </div>
-
-
-
-        <!-- Contact Page -->
-        <div id="container4" class="row-fluid">
-            <div class="span12">    
-                <h1 class="main-title"> Contact </h1>
-
-                <div class="social-media span4 offset1">
-                    <div class="span1">
-                        <img src="static/img/facebook.alt.png" />
-                    </div> 
-                    <div class="span2">
-                        <img src="static/img/imdb.svg" />    
-                    </div> 
-                    <div class="span2">
-                        <img src="static/img/twitter.alt.png" />
-                    </div> 
-                    <div class="span2">
-                        <img src="static/img/gmail_small.png" />
-                    </div> 
-                </div>
-
-                    <div class="span6 ">
-                              
-                        <div class="contact-form span8">
-                            <h3>Email Me</h3>
-                            <h6>Email: myemail(a)gmail.com</h6>
-                            <input type="text" class="span12" placeholder="name">
-                            <input type="text" class="span12" placeholder="Your Email">
-                            <input type="text" class="span12" placeholder="Subject">
-                            <textarea class="span12" rows="10">Dear Bartley, </textarea>
-                            <button class="email-btn btn btn-large btn-primary" type="button">Email</button>
-                        </div>   
-                </div>   
-                
-                
-               
-                
-            </div>
-        </div>
-
-
-
-
 
 
     </body>
