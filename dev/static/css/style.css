@@ -39,7 +39,7 @@ h1 {
   font-family: copaseptic !important;
 }
 #container-home {
-  background: url('../img/Bart_0580F.wv.jpg') no-repeat;
+  background: url('../img/Bart_0656F.wv.jpg') no-repeat;
   background-position: left bottom;
 }
 #container { font-family: champagne; 
@@ -61,7 +61,7 @@ h1 {
 	margin: 0 auto;
 }
 #container4 { 
-  background: url('../img/Bart_0706F.wv.jpg') no-repeat;
+  background: url('../img/Bart_0580F.wv.jpg') no-repeat;
   background-position: left bottom;
     
 }
@@ -89,11 +89,14 @@ h1 {
 	background-color: black;
 }
 
+#container-home .main-title {
+	font-size: 80px;
+}
 
 .main-title {
 	text-align: center;
 	margin: 50px 0;
-	font-size: 48px;
+	font-size: 64px;
 }
 .sub-title {
 	text-align: center;
@@ -228,4 +231,14 @@ h1 {
 }
 #container3 .thumbnails.offset2{
   margin-left: 234px;
+}
+.contact-list li {
+  margin: 0 0 40px 0;
+}
+.contact-list li p {
+  height: 100px;  
+  display: inline;
+}
+.contact-list li.imdb img, .contact-list li.instagram img {
+  height: 64px;  
 }

@@ -31,7 +31,7 @@ $(document).ready(function() {
   var innery = $artHeaderInner.offset().top;
 
   // Apply Fittext to article titles to make it scale responsively in a smooth fashion
-  $artTitle.fitText(1, { minFontSize: '34px' });
+  //$artTitle.fitText(1, { minFontSize: '34px' });
 
   // Identify if visitor has a large enough viewport for parallaxing title
   function isLargeViewport() {
