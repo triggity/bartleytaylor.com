@@ -27,8 +27,8 @@ $(document).ready(function() {
   //initial y
   var hi = $artHeader.css("background-position"); 
   //var y = parseInt(hi.split(" ")[1].replace(/[A-Za-z$-]/g, ""));
-  y = $artHeader.height();
-  console.log("initial y: " + y);
+  var y = $artHeader.height();
+  var innery = $artHeaderInner.offset().top;
 
   // Apply Fittext to article titles to make it scale responsively in a smooth fashion
   $artTitle.fitText(1, { minFontSize: '34px' });
@@ -65,23 +65,19 @@ $(document).ready(function() {
     windowScroll = $(this).scrollTop();
 
     //Slow scroll of .art-header-inner scroll and fade it out
+    var moveinner =  innery  + (windowScroll);
+    console.log(moveinner)
     $artHeaderInner.css({
-      'margin-top' : -(windowScroll/3)+"px",
+      'margin-top' : moveinner+"px",
       'opacity' : 1-(windowScroll/550)
     });
 
     //Slowly parallax the background of .art-header
     var move = y - 683 + (windowScroll/2);
-    console.log("bgp: " + move);
     $artHeader.css({
       'background-position' : 'left ' + move+"px"
       //'background-position' : 'center ' + (windowScroll)+"px"
     });
-    console.log(
-    $artHeader.css(
-      'background-position' 
-    )
-    );
 
     //Fade the .nav out
     //$nav.css({
