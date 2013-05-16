@@ -22,13 +22,21 @@
 	font-weight: bold;
 }
 @font-face {
-	font-family: copaseti.ttf;
-	src: url('fonts/copaseti.ttf');
+	font-family: copaseptic;
+	src: url('fonts/copaseptic.ttf');
+	font-weight: bold;
 }
 
+@font-face {
+	font-family: copaseptic;
+	src: url('fonts/copaseptic.ttf');
+}
 body {
 
   height: 100%;
+}
+h1 {
+  font-family: copaseptic !important;
 }
 #container-home {
   background: url('../img/Bart_0580F.wv.jpg') no-repeat;
@@ -36,12 +44,14 @@ body {
 }
 #container { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
-  background-position: right bottom;
+  background-position: 650px bottom;
 }
 #container2, #container, #container3, #container4, #container-home {
 	height: 1000px;
+  min-width: 1000px;
 	width:100%;
   border-bottom: 3px solid rgba(0,0,0,0.8);
+  background-attachment: fixed;
 	
 }
 

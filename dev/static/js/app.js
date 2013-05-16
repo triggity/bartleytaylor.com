@@ -45,9 +45,7 @@ $(document).ready(function() {
   // If large viewport and not mobile, parallax the title
   if(!isMobile) {
     $(window).scroll(function() {
-      //if(isLargeViewport()) {
         slidingTitle();
-      //}
     });
   }
 
@@ -66,18 +64,16 @@ $(document).ready(function() {
 
     //Slow scroll of .art-header-inner scroll and fade it out
     var moveinner =  innery  + (windowScroll);
-    console.log(moveinner)
     $artHeaderInner.css({
       'margin-top' : moveinner+"px",
       'opacity' : 1-(windowScroll/550)
     });
 
     //Slowly parallax the background of .art-header
-    var move = y - 683 + (windowScroll/2);
-    $artHeader.css({
-      'background-position' : 'left ' + move+"px"
-      //'background-position' : 'center ' + (windowScroll)+"px"
-    });
+    //var move = y - 683 + (windowScroll/2);
+    //$artHeader.css({
+    //  'background-position' : 'left ' + move+"px"
+    //});
 
     //Fade the .nav out
     //$nav.css({
