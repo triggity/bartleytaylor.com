@@ -29,9 +29,11 @@
            
             $(document).ready(function() {
                 $('#nav a').smoothScroll({ easing: 'linear'});    
-            });
-            
-            $(document).ready(function() {
+
+                $(".emailsubmit").click(function() {
+                  $(".emailform").submit();
+                  
+                });
                     $('.fancybox').fancybox({
                         padding : 0,
                         openEffect  : 'elastic'
@@ -52,9 +54,6 @@
               <div class="navbar-inner">
                 <span class="title">BartleyTaylor.com</span> 
               <ul class="nav">
-                <li >
-                    <a href="#container-home">Welcome</a>
-                </li>
                 <li >
                     <a href="#container">About</a>
                 </li>
@@ -118,8 +117,6 @@
         <div id="container3" class="row">
            <!--<div class="span12"> -->   
            <h1 class="main-title">  SELECTED WORK</h1>
-           <h4 class="sub-title"> - Selection of Previous Projects-</h4>
-           <div class="projects-presentation"></div>
 
            <ul class="thumbnails span14 offset2">
             <!-- thunmbnail type 2 -->
@@ -179,29 +176,31 @@
 
 
                 <div class="span6 offset6 contact-list">
-<a href="http://www.facebook.com/bartley.taylor1">
                   <li class="span12">
-                    <img src="static/img/icon-facebook.png" />
-                    <p>facebook.com/bartley.taylor1</p>
-                  </li> </a>
-                  <li class="span12 imdb">
-                    <img src="static/img/icon-imdb.jpeg" />    
-                    <p><a href="http://www.imdb.com/name/nm3513287/">imdb.com</a></p>
-                  </li>
-                  <li class="span12">
-                    <img src="static/img/icon-twitter.gif" />
-                    <p><a href="https://twitter.com/BartleyTaylor">twitter.com/BartleyTaylor</a></p>
-                  </li>
-                  <li class="span12 instagram">
-                    <img src="static/img/icon-instagram.png" />
-                    <p><a href="http://instagram.com/bartleytaylor">instagram.com/bartleytaylor</a></p>
-                  </li>
-                  <li class="span12">
-                    <img src="static/img/gmail_small.png" />
-                  <form action="mailto:bartleytaylor@gmail.com" method="get" enctype="text/plain">
-                      <button class="email-btn btn btn-large btn-primary" type="submit" value="Send">Email</button>
+                  <form class="emailform" action="mailto:bartleytaylor@gmail.com" method="get" enctype="text/plain">
+                    <img class="emailsubmit" src="static/img/icon-email.jpeg" />
                   </form>
 
+                  </li>
+                  <li class="span12">
+                    <a href="http://www.facebook.com/bartley.taylor1">
+                    <img src="static/img/icon-facebook.png" />
+                  </a>
+                  </li> 
+                  <li class="span12 imdb">
+                    <a href="http://www.imdb.com/name/nm3513287/">
+                    <img src="static/img/icon-imdb.jpeg" />    
+                    </a>
+                  </li>
+                  <li class="span12">
+                    <a href="https://twitter.com/BartleyTaylor">
+                    <img src="static/img/icon-twitter.gif" />
+                    </a>
+                  </li>
+                  <li class="span12 instagram">
+                    <a href="http://instagram.com/bartleytaylor">
+                    <img src="static/img/icon-instagram.png" />
+                    </a>
                   </li>
 
 
