@@ -56,7 +56,7 @@ h1 {
 	
 }
 
-#container2 { background: #9b70c0;}	
+#container2 { background: #fff;}	
 #container3 { 
 	background: url('../img/paper_fibers.png');
 	margin: 0 auto;
@@ -240,6 +240,6 @@ h1 {
   height: 100px;  
   display: inline;
 }
-.contact-list li.imdb img, .contact-list li.instagram img {
+.contact-list li img  {
   height: 64px;  
 }
