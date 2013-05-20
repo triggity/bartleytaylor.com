@@ -137,7 +137,12 @@ h1 {
 #nav .active a {
   background-color: inherit;
 }
-
+.thumbnail:hover {
+  background-color: rgba(0,0,0,0.5)
+}
+.thumbnail .caption {
+  height: 250px;
+}
 .thumbnail .project-title {
   position: relative;
   top: 100px;
@@ -240,6 +245,18 @@ h1 {
 }
 #container4 .contact-list li {
   margin: 0 0 40px 0;
+}
+#container4 .contact-list li p {
+  display: none;
+}
+#container4 .contact-list li:hover p {
+  margin-left: 50px;
+  display: inline;
+}
+#container4 .contact-list li:hover {
+  padding-bottom: 1px;
+  box-shadow: 6px 7px 6px 3px;
+  border: none;
 }
 .contact-list li p {
   height: 100px;  

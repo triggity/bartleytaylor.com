@@ -21,7 +21,7 @@ $(document).ready(function() {
   var $artSubtitle = $('.art-subtitle');
   var $artTime = $('.art-time');
   var artTitleFontSize = parseInt($artTitle.css('font-size'));
-  var $nav = $('.nav');
+  var $nav = $('#nav');
   var windowScroll;
 
   //initial y

@@ -5,21 +5,17 @@
         
         <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="static/css/lib/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="static/css/lib/jquery.fancybox.css"/>
-        <!--
-        <link href="static/css/lib/bootstrap-responsive.min.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        -->
+        <link rel="stylesheet" type="text/css" media="screen" href="static/css/lib/jquery.fancybox.css?v=2.1.4"/>
+
         <script type="text/javascript" src="static/js/lib/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="static/js/lib/bootstrap.js"></script>
-        <script type="text/javascript" src="static/js/lib/jquery.fancybox.js"></script>
-        <script src="static/js/lib/holder.js"></script>
+        <script type="text/javascript" src="static/js/lib/jquery.fancybox.js?v=2.1.4"></script>
         <script src="static/js/lib/jquery.smooth-scroll.js"></script>
         <script src="static/js/lib/jquery.fittext.js"></script>
         <script src="static/js/lib/respond.min.js"></script>
         <script type="text/javascript" src="static/js/app.js"></script>
-	<!-- Add Media helper (this is optional) -->
-	<script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
+	      <!-- Add Media helper (this is optional) -->
+	      <script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
         
     </head>
     <body data-spy="scroll" data-target="#nav">
@@ -34,15 +30,18 @@
                   $(".emailform").submit();
                   
                 });
-                    $('.fancybox').fancybox({
-                        padding : 0,
-                        openEffect  : 'elastic'
-                    });
+                    //$('.fancybox').fancybox({
+                    //    padding : 0,
+                    //    openEffect  : 'elastic'
+                    //});
                     $('.fancybox-media').fancybox({
-                        openEffect  : 'none',
+                        openEffect  : 'fade',
                         closeEffect : 'none',
                         helpers : {
-                            media : {}
+                            media : {},
+                            title : {
+                                type : 'inside'
+                            }
                         }
                     });
             });
@@ -52,7 +51,7 @@
 
             <div id="nav"class="navbar navbar-inverse navbar-fixed-top">
               <div class="navbar-inner">
-                <span class="title">BartleyTaylor.com</span> 
+                <a href="#container-home"><span class="title">BartleyTaylor.com</span></a> 
               <ul class="nav">
                 <li >
                     <a href="#container">About</a>
@@ -106,11 +105,12 @@
             <div class="span12">    
                 <h1 class="main-title">REEL</h1>
                
+                <!--
                 <div class="reel-intro">
                     <iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
                    
                 </div>
-                
+                -->
 
             </div>
         </div>
@@ -126,17 +126,19 @@
                <div class="caption">
                   <h3>Walk The Moon</h3>
                   <p>Thumbnail caption...</p>
-                  <a href="http://player.vimeo.com/video/64045082" class="btn fancybox-media" type="button"> Play </a>
+                  <a href="http://vimeo.com/64045082" class="btn fancybox-media" title="Walk The Moon" type="button"> Play </a>
+                  <a href="https://vimeo.com/64045082" class="btn" type="button"> Info</a>
                </div>
              </div>
              </li>
+                  <a href="http://vimeo.com/64045082" class="fancybox-media" title="Walk The Moon" > Play </a>
              <li class="span4">
              <div class="thumbnail">
                <img src="static/img/RockyRoad.png" alt="Rocky Road">
                <div class="caption">
                   <h3>Rocky Road</h3>
                   <p>Thumbnail caption...</p>
-                  <a href="https://vimeo.com/64336984" class="btn fancybox-media" type="button"> Play </a>
+                  <a href="https://vimeo.com/64336984" class="btn fancybox-media" title="Rocky Road" type="button"> Play </a>
                </div>
              </div>
              </li>
@@ -146,7 +148,7 @@
                <div class="caption">
                   <h3>Helen: A Great Old Broad</h3>
                   <p>Thumbnail caption...</p>
-                  <a href="https://vimeo.com/64046284" class="btn fancybox-media" type="button"> Play </a>
+                  <a href="https://vimeo.com/64046284" class="btn fancybox-media" title="Helen: A Great Old Broad" type="button"> Play </a>
                </div>
              </div>
              </li>
@@ -156,7 +158,7 @@
                <div class="caption">
                <h3>Smelly Proof</h3>
                <p>Thumbnail caption...</p>
-               <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" type="button"> Play </a>
+               <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" title="Smelly Proof" type="button"> Play </a>
              </div>
              </div>
              </li>
@@ -179,27 +181,32 @@
                   <li class="span12">
                   <form class="emailform" action="mailto:bartleytaylor@gmail.com" method="get" enctype="text/plain">
                     <img class="emailsubmit" src="static/img/icon-email.jpeg" />
+                    <p>service.com/something</p>
                   </form>
 
                   </li>
                   <li class="span12">
                     <a href="http://www.facebook.com/bartley.taylor1">
                     <img src="static/img/icon-facebook.png" />
+                    <p>service.com/something</p>
                   </a>
                   </li> 
                   <li class="span12 imdb">
                     <a href="http://www.imdb.com/name/nm3513287/">
                     <img src="static/img/icon-imdb.jpeg" />    
+                    <p>service.com/something</p>
                     </a>
                   </li>
                   <li class="span12">
                     <a href="https://twitter.com/BartleyTaylor">
                     <img src="static/img/icon-twitter.gif" />
+                    <p>service.com/something</p>
                     </a>
                   </li>
                   <li class="span12 instagram">
                     <a href="http://instagram.com/bartleytaylor">
                     <img src="static/img/icon-instagram.png" />
+                    <p>service.com/something</p>
                     </a>
                   </li>
 
