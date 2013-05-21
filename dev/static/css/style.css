@@ -38,15 +38,15 @@ body {
 h1 {
   font-family: copaseptic !important;
 }
-#container-home {
+#home-page {
   background: url('../img/Bart_0656F.wv.jpg') no-repeat;
   background-position: left bottom;
 }
-#container { font-family: champagne; 
+#about-page { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
   background-position: 650px bottom;
 }
-#container2, #container, #container3, #container4, #container-home {
+#reel-page, #about-page, #works-page, #contact-page, #home-page {
 	height: 1000px;
   min-width: 1000px;
 	width:100%;
@@ -56,17 +56,17 @@ h1 {
 	
 }
 
-#container2 { background: #fff;}	
-#container3 { 
+#reel-page { background: #fff;}	
+#works-page { 
 	background: url('../img/paper_fibers.png');
 	margin: 0 auto;
 }
-#container4 { 
+#contact-page { 
   background: url('../img/Bart_0580F.wv.jpg') no-repeat;
   background-position: left bottom;
     
 }
-#container4 .main-title {
+#contact-page .main-title {
     padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -89,7 +89,7 @@ h1 {
 	background-color: black;
 }
 
-#container-home .main-title {
+#home-page .main-title {
 	font-size: 80px;
 }
 
@@ -237,23 +237,23 @@ h1 {
     float: right;
     padding-right: 100px;
 }
-#container3 .thumbnails.offset2{
+#works-page .thumbnails.offset2{
   margin-left: 234px;
 }
 .contact-list {
  margin-top: 150px;
 }
-#container4 .contact-list li {
+#contact-page .contact-list li {
   margin: 0 0 40px 0;
 }
-#container4 .contact-list li p {
+#contact-page .contact-list li p {
   display: none;
 }
-#container4 .contact-list li:hover p {
+#contact-page .contact-list li:hover p {
   margin-left: 50px;
   display: inline;
 }
-#container4 .contact-list li:hover {
+#contact-page .contact-list li:hover {
   padding-bottom: 1px;
   box-shadow: 6px 7px 6px 3px;
   border: none;
