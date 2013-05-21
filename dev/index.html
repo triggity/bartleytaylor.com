@@ -35,7 +35,8 @@
            
             $(document).ready(function() {
                 $("#nav a").click(function() {
-      _gaq.push(['_trackPageview']);
+                    console.log($(this).attr("data-name"));
+      _gaq.push(['_trackPageview',$(this).attr("data-name") ]);
                     
                     })
                 $('#nav a').smoothScroll({ easing: 'linear'});    
@@ -68,16 +69,16 @@
                 <a href="#home-page"><span class="title">BartleyTaylor.com</span></a> 
               <ul class="nav">
                 <li >
-                    <a href="#about-page">About</a>
+                    <a data-name="about-page" href="#about-page">About</a>
                 </li>
                 <li>
-                    <a href="#reel-page">Reel</a>
+                    <a data-name="reel-page" href="#reel-page">Reel</a>
                 </li>
                 <li>
-                    <a href="#works-page">Selected Work</a>
+                    <a data-name="works-page" href="#works-page">Selected Work</a>
                 </li>
                 <li>
-                    <a href="#contact-page">Contact</a>
+                    <a data-name="contact-page" href="#contact-page">Contact</a>
                 </li>
               </ul>
             </div>
