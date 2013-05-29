@@ -16,6 +16,7 @@
         <script type="text/javascript" src="static/js/app.js"></script>
 	      <!-- Add Media helper (this is optional) -->
 	      <script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
+          <script src="static/js/lib/jqBootstrapValidation.js"></script>
         
     </head>
     <body data-spy="scroll" data-target="#nav">
@@ -59,6 +60,7 @@
                             }
                         }
                     });
+                     $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
             });
             
         </script>
@@ -188,42 +190,69 @@
             <div class="span12">    
                 <h1 class="main-title"> CONTACT</h1>
 
-
                 <div class="span6 offset6 contact-list">
-                  <li class="span12">
-                  <form class="emailform" action="mailto:bartleytaylor@gmail.com" method="get" enctype="text/plain">
-                    <img class="emailsubmit" src="static/img/icon-email.jpeg" />
-                    <p>service.com/something</p>
-                  </form>
-
-                  </li>
                   <li class="span12">
                     <a href="http://www.facebook.com/bartley.taylor1">
                     <img src="static/img/icon-facebook.png" />
-                    <p>service.com/something</p>
                   </a>
                   </li> 
                   <li class="span12 imdb">
                     <a href="http://www.imdb.com/name/nm3513287/">
                     <img src="static/img/icon-imdb.jpeg" />    
-                    <p>service.com/something</p>
                     </a>
                   </li>
                   <li class="span12">
                     <a href="https://twitter.com/BartleyTaylor">
                     <img src="static/img/icon-twitter.gif" />
-                    <p>service.com/something</p>
                     </a>
                   </li>
                   <li class="span12 instagram">
                     <a href="http://instagram.com/bartleytaylor">
                     <img src="static/img/icon-instagram.png" />
-                    <p>service.com/something</p>
                     </a>
                   </li>
 
 
                 </div>   
+                <div class="span6 offset6">
+                    <form>
+                        <fieldset>
+                            <legend>Email Me</legend>
+                            <div class="control-group">
+                                <label class="control-label">Your Email</label>
+                                <div class="controls">
+                                    <input type="email" placeholder="john@somewhere.com" required>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label">Your Name</label>
+                                <div class="controls">
+                                    <input type="text" placeholder="John Doe" required>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label">Message</label>
+                                <div class="controls">
+                                    <textarea rows="3" placeholder="To Bart: " required>Bart, </textarea>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+
+
+
+                            <label class="checkbox">
+                                We promise not to send you any shit
+                            </label>
+                            <button type="submit" class="btn">Submit</button>
+                        </fieldset>
+                    </form>
+
+                </div>
                 
                 
                
