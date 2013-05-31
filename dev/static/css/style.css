@@ -267,3 +267,6 @@ h1 {
 #contact-page .contact-list li, #contact-page .contact-list li img  {
   display: inline;
 }
+.controls input, .controls textarea {
+    width: 250px;
+}
