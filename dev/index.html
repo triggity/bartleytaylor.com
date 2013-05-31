@@ -13,16 +13,14 @@
         <script src="static/js/lib/jquery.smooth-scroll.js"></script>
         <script src="static/js/lib/jquery.fittext.js"></script>
         <script src="static/js/lib/respond.min.js"></script>
-        <script type="text/javascript" src="static/js/app.js"></script>
-	    <!-- Add Media helper (this is optional) -->
 	    <script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
         <script src="static/js/lib/jqBootstrapValidation.js"></script>
+        <script type="text/javascript" src="static/js/app.js"></script>
         
     </head>
     <body data-spy="scroll" data-target="#nav">
 
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-20917644-1']);
       _gaq.push(['_trackPageview']);
@@ -33,57 +31,57 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
 
-        $(document).ready(function() {
+      $(document).ready(function() {
 
-           
-                $("#nav a").click(function() {
-                    console.log($(this).attr("data-name"));
-                    _gaq.push(['_trackPageview',$(this).attr("data-name") ]);
-                    
-                    })
-                $('#nav a').smoothScroll({ easing: 'linear'});    
+        $('#nav a').smoothScroll({ easing: 'linear'});    
 
-                $(".emailsubmit").click(function() {
-                   console.log("garthering email resources")
-                   console.log($('form').serialize())
-                   data = {
-                        'email': $('.email-field').val(),
-                        'name': $('.name-field').val(),
-                        'text': $('.text-area-field').val()
-                   }
+        //logging inpage nav clicks
+        $("#nav a").click(function() {
+          console.log($(this).attr("data-name"));
+          _gaq.push(['_trackPageview',$(this).attr("data-name") ]);
+        })
 
-                    $.ajax({
-                          type: "POST",
-                          url: "http://127.0.0.1:5000/email",
-                          data: data,
-                          success: function(result) {console.log(result)}
-                    });
-                    console.log("submit");
-                  
-                });
-                    //$('.fancybox').fancybox({
-                    //    padding : 0,
-                    //    openEffect  : 'elastic'
-                    //});
-                    $('.fancybox-media').fancybox({
-                        openEffect  : 'fade',
-                        closeEffect : 'none',
-                        helpers : {
-                            media : {},
-                            title : {
-                                type : 'inside'
-                            }
-                        }
-                    });
-                     $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+        //validation of form fields
+        $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
+        //submit email from form
+        $(".emailsubmit").click(function() {
+           console.log("garthering email resources")
+           console.log($('form').serialize())
+           //gather data
+           data = {
+             'email': $('.email-field').val(),
+             'name': $('.name-field').val(),
+             'text': $('.text-area-field').val()
+           }
+
+           //send to server
+           $.ajax({
+             type: "POST",
+             url: "http://127.0.0.1:5000/email",
+             data: data,
+             success: function(result) {console.log(result)}
+           });
         });
-        </script>
+
+        //fancybox opening of images
+        $('.fancybox-media').fancybox({
+          openEffect  : 'fade',
+          closeEffect : 'none',
+          helpers : {
+            media : {},
+            title : { type : 'inside'}
+          }
+        });
+
+      });
+    </script>
              
 
-            <div id="nav"class="navbar navbar-inverse navbar-fixed-top">
-              <div class="navbar-inner">
-                <a href="#home-page"><span class="title">BartleyTaylor.com</span></a> 
-              <ul class="nav">
+    <div id="nav"class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <a href="#home-page"><span class="title">BartleyTaylor.com</span></a> 
+            <ul class="nav">
                 <li >
                     <a data-name="about-page" href="#about-page">About</a>
                 </li>
@@ -96,106 +94,109 @@
                 <li>
                     <a data-name="contact-page" href="#contact-page">Contact</a>
                 </li>
-              </ul>
-            </div>
-            </div>
-        <header id="home-page" class="art-header">
-            
-
-                <h1 class="main-title offset3 art-header-inner"> BARTLEY TAYLOR</h1>
-    	</header>
-        <div id="about-page" class="row-fluid ">
-            
-
-            <div class="span10 offset1">    
-                <h1 class="main-title "> ABOUT</h1>
+            </ul>
+        </div>
+    </div>
 
 
-                <div class="about-text span6">
-                    <p class="first-line">
+    <!-- page 1: header page -->
+    <header id="home-page" class="art-header">
+        <h1 class="main-title offset3 art-header-inner"> BARTLEY TAYLOR</h1>
+    </header>
+
+    <!-- page 2: about page -->
+    <div id="about-page" class="row-fluid ">
+        <div class="span10 offset1">    
+            <h1 class="main-title "> ABOUT</h1>
+
+
+            <div class="about-text span6">
+                <p class="first-line">
                     Hey! I'm Bartley, or Bart, It's strange to say my own full first name. Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
-                    </p>
-                    <p>
+                </p>
+                <p>
                     I was born and raised in this <strike>shitty </strike>great city of Los Angeles.
                     I knew from a young age that I wanted to make movies - rather, tell stories.
                     I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed.
                     That naturally evolved into a love of cinema and actors.
                     I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors as opposed to being one.
                     I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions./
-                    Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients.                     Now <strike>starving</strike> operating as a freelance director, I am constantly looking to expand my horizons as a creative force with in the industry. 
-                    </p>
-                    <p>
+                    Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients. Now <strike>starving</strike> operating as a freelance director, I am constantly looking to expand my horizons as a creative force with in the industry. 
+                </p>
+                <p>
                     When I'm not wracking my brain with how to stay relevant and getting another gig, I'm usually outside with my dogs, having brunch with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others, life begins at the end of your comfort zone.
-                    </p>
-                </div>  
-            </div>
-    	</div>
+                </p>
+            </div>  
+        </div>
+    </div>
 
-        <div id="reel-page" class="row-fluid">
-
-            <div class="span12">    
-                <h1 class="main-title">REEL</h1>
+    <!-- page 3: reel page -->
+    <div id="reel-page" class="row-fluid">
+        <div class="span12">    
+            <h1 class="main-title">REEL</h1>
                
-                <div class="reel-intro">
+            <div class="reel-intro">
                     <!--<iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
                     -->
-                </div>
-
             </div>
+
         </div>
-        <div id="works-page" class="row">
-           <!--<div class="span12"> -->   
-           <h1 class="main-title">  SELECTED WORK</h1>
+    </div>
 
-           <ul class="thumbnails span14 offset2">
-            <!-- thunmbnail type 2 -->
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
-               <div class="caption">
-                  <h3>Walk The Moon</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="http://vimeo.com/64045082" class="btn fancybox-media" title="Walk The Moon" type="button"> Play </a>
-                  <a href="https://vimeo.com/64045082" class="btn" type="button"> Info</a>
-               </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/RockyRoad.png" alt="Rocky Road">
-               <div class="caption">
-                  <h3>Rocky Road</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="https://vimeo.com/64336984" class="btn fancybox-media" title="Rocky Road" type="button"> Play </a>
-               </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/Helen.png" alt="Helen: A Great Old Broad">
-               <div class="caption">
-                  <h3>Helen: A Great Old Broad</h3>
-                  <p>Thumbnail caption...</p>
-                  <a href="https://vimeo.com/64046284" class="btn fancybox-media" title="Helen: A Great Old Broad" type="button"> Play </a>
-               </div>
-             </div>
-             </li>
-             <li class="span4">
-             <div class="thumbnail">
-               <img src="static/img/SmellyProof.png" alt="Smelly Proof">
-               <div class="caption">
-               <h3>Smelly Proof</h3>
-               <p>Thumbnail caption...</p>
-               <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" title="Smelly Proof" type="button"> Play </a>
-             </div>
-             </div>
-             </li>
+    <!-- page 4: works page -->
+    <div id="works-page" class="row">
+       <!--<div class="span12"> -->   
+       <h1 class="main-title">  SELECTED WORK</h1>
 
-
-           </ul>
-         
-         
+       <ul class="thumbnails span14 offset2">
+        <!-- thunmbnail type 2 -->
+         <li class="span4">
+         <div class="thumbnail">
+           <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
+           <div class="caption">
+              <h3>Walk The Moon</h3>
+              <p>Thumbnail caption...</p>
+              <a href="http://vimeo.com/64045082" class="btn fancybox-media" title="Walk The Moon" type="button"> Play </a>
+              <a href="https://vimeo.com/64045082" class="btn" type="button"> Info</a>
+           </div>
          </div>
+         </li>
+         <li class="span4">
+         <div class="thumbnail">
+           <img src="static/img/RockyRoad.png" alt="Rocky Road">
+           <div class="caption">
+              <h3>Rocky Road</h3>
+              <p>Thumbnail caption...</p>
+              <a href="https://vimeo.com/64336984" class="btn fancybox-media" title="Rocky Road" type="button"> Play </a>
+           </div>
+         </div>
+         </li>
+         <li class="span4">
+         <div class="thumbnail">
+           <img src="static/img/Helen.png" alt="Helen: A Great Old Broad">
+           <div class="caption">
+              <h3>Helen: A Great Old Broad</h3>
+              <p>Thumbnail caption...</p>
+              <a href="https://vimeo.com/64046284" class="btn fancybox-media" title="Helen: A Great Old Broad" type="button"> Play </a>
+           </div>
+         </div>
+         </li>
+         <li class="span4">
+         <div class="thumbnail">
+           <img src="static/img/SmellyProof.png" alt="Smelly Proof">
+           <div class="caption">
+           <h3>Smelly Proof</h3>
+           <p>Thumbnail caption...</p>
+           <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" title="Smelly Proof" type="button"> Play </a>
+         </div>
+         </div>
+         </li>
+
+
+       </ul>
+     
+     
+    </div>
 
 
 
