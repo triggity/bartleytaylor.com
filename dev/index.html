@@ -14,9 +14,9 @@
         <script src="static/js/lib/jquery.fittext.js"></script>
         <script src="static/js/lib/respond.min.js"></script>
         <script type="text/javascript" src="static/js/app.js"></script>
-	      <!-- Add Media helper (this is optional) -->
-	      <script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
-          <script src="static/js/lib/jqBootstrapValidation.js"></script>
+	    <!-- Add Media helper (this is optional) -->
+	    <script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
+        <script src="static/js/lib/jqBootstrapValidation.js"></script>
         
     </head>
     <body data-spy="scroll" data-target="#nav">
@@ -33,17 +33,32 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
 
+        $(document).ready(function() {
+
            
-            $(document).ready(function() {
                 $("#nav a").click(function() {
                     console.log($(this).attr("data-name"));
-      _gaq.push(['_trackPageview',$(this).attr("data-name") ]);
+                    _gaq.push(['_trackPageview',$(this).attr("data-name") ]);
                     
                     })
                 $('#nav a').smoothScroll({ easing: 'linear'});    
 
                 $(".emailsubmit").click(function() {
-                  $(".emailform").submit();
+                   console.log("garthering email resources")
+                   console.log($('form').serialize())
+                   data = {
+                        'email': $('.email-field').val(),
+                        'name': $('.name-field').val(),
+                        'text': $('.text-area-field').val()
+                   }
+
+                    $.ajax({
+                          type: "POST",
+                          url: "http://127.0.0.1:5000/email",
+                          data: data,
+                          success: function(result) {console.log(result)}
+                    });
+                    console.log("submit");
                   
                 });
                     //$('.fancybox').fancybox({
@@ -61,8 +76,7 @@
                         }
                     });
                      $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-            });
-            
+        });
         </script>
              
 
@@ -123,8 +137,8 @@
                 <h1 class="main-title">REEL</h1>
                
                 <div class="reel-intro">
-                    <iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
-                   
+                    <!--<iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
+                    -->
                 </div>
 
             </div>
@@ -221,7 +235,7 @@
                             <div class="control-group">
                                 <label class="control-label">Your Email &#42;</label>
                                 <div class="controls">
-                                    <input type="email" placeholder="john@somewhere.com" required>
+                                    <input type="email" placeholder="john@somewhere.com" class="email-field" required>
                                     <p class="help-block"></p>
                                 </div>
                             </div>
@@ -229,7 +243,7 @@
                             <div class="control-group">
                                 <label class="control-label">Your Name &#42;</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="John Doe" required>
+                                    <input type="text" placeholder="John Doe" class="name-field" required>
                                     <p class="help-block"></p>
                                 </div>
                             </div>
@@ -237,7 +251,7 @@
                             <div class="control-group">
                                 <label class="control-label">Message &#42;</label>
                                 <div class="controls">
-                                    <textarea rows="3" placeholder="To Bart: " required>Bart, </textarea>
+                                    <textarea rows="3" placeholder="To Bart: " class="text-area-field" required>Bart, </textarea>
                                     <p class="help-block"></p>
                                 </div>
                             </div>
@@ -248,7 +262,7 @@
                             <label class="checkbox">
                                 We promise not to send you any shit
                             </label>
-                            <button type="submit" class="btn">Submit</button>
+                            <div class="emailsubmit btn">Submit</div>
                         </fieldset>
                     </form>
 
