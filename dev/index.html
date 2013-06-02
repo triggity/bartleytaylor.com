@@ -21,31 +21,46 @@
     <body data-spy="scroll" data-target="#nav">
 
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-20917644-1']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-       })();
+       var _gas = _gas || [];
+       _gas.push(['_setAccount', 'UA-20917644-1']);
+       _gas.push(['_setDomainName', 'bartleytaylor.com']); 
+       _gas.push(['_trackPageview']);
+       _gas.push(['_gasTrackForms']);
+       _gas.push(['_gasTrackOutboundLinks']);
+       _gas.push(['_gasTrackMaxScroll']);
+       _gas.push(['_gasTrackDownloads']);
+       _gas.push(['_gasTrackYoutube', {force: true}]);
+       _gas.push(['_gasTrackVimeo', {force: true}]);
+       _gas.push(['_gasTrackMailto']);
 
+       (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+        })();
+        
       $(document).ready(function() {
 
+        $("#home-page").alert()
         $('#nav a').smoothScroll({ easing: 'linear'});    
 
         //logging inpage nav clicks
         $("#nav a").click(function() {
           console.log($(this).attr("data-name"));
-          _gaq.push(['_trackPageview',$(this).attr("data-name") ]);
+          _gas.push(['_trackPageview',$(this).attr("data-name") ]);
         })
 
         //validation of form fields
         $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 
         //submit email from form
-        $(".emailsubmit").click(function() {
+        $(".contact-form").on("submit", function(event) {
+            event.preventDefault()
+            
            console.log("garthering email resources")
            console.log($('form').serialize())
            //gather data
@@ -60,9 +75,13 @@
              type: "POST",
              url: "http://127.0.0.1:5000/email",
              data: data,
-             success: function(result) {console.log(result)}
+             success: function(result) {
+               console.log(result)
+               $('#myModal').modal(options)
+             }
            });
         });
+
 
         //fancybox opening of images
         $('.fancybox-media').fancybox({
@@ -226,13 +245,27 @@
                 </li>
             </div>   
             <div class="span6 offset6">
-                <form>
+                <!-- Modal -->
+                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Thank You</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>thank you for talking to us</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+                    </div>
+                </div>
+
+                <form class="contact-form">
                     <fieldset>
                         <legend>Email Me</legend>
                         <div class="control-group">
                             <label class="control-label">Your Email &#42;</label>
                             <div class="controls">
-                                <input type="email" placeholder="john@somewhere.com" class="email-field" required>
+                                <input type="email" value="i@a.com"  placeholder="john@somewhere.com" class="email-field" required>
                                 <p class="help-block"></p>
                             </div>
                         </div>
@@ -240,7 +273,7 @@
                         <div class="control-group">
                             <label class="control-label">Your Name &#42;</label>
                             <div class="controls">
-                                <input type="text" placeholder="John Doe" class="name-field" required>
+                                <input type="text" value="i@a.com" placeholder="John Doe" class="name-field" required>
                                 <p class="help-block"></p>
                             </div>
                         </div>
@@ -256,7 +289,7 @@
                         <label class="checkbox">
                             We promise not to send you any shit
                         </label>
-                        <div class="emailsubmit btn">Submit</div>
+                        <button type="submit" class="emailsubmit btn">Submit</button>
                     </fieldset>
                 </form>
             </div>
