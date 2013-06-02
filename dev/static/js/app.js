@@ -58,7 +58,6 @@ $(document).ready(function() {
 
   // Functional parallaxing calculations
   function slidingTitle() {
-    //console.log("slidingtitle");
     //Get scroll position of window
     windowScroll = $(this).scrollTop();
 
@@ -69,11 +68,6 @@ $(document).ready(function() {
       'opacity' : 1-(windowScroll/550)
     });
 
-    //Slowly parallax the background of .art-header
-    //var move = y - 683 + (windowScroll/2);
-    //$artHeader.css({
-    //  'background-position' : 'left ' + move+"px"
-    //});
 
     //Fade the .nav out
     //$nav.css({
