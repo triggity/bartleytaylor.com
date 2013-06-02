@@ -26,11 +26,12 @@ def email():
         s.login(from_email, password)  
         s.sendmail(from_email, to, msg.as_string())
         s.quit()
-        print "Successfully sent email"
+        msg = "Successfully sent email"
     except Exception as e:
-        print "Error: unable to send email: ", e
+        msg = "Error: unable to send email: ", e
 
-    return "from flask"
+    print msg
+    return msg
 
 if __name__ == "__main__":
     app.run(debug=True)
