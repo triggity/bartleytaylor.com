@@ -73,11 +73,12 @@
            //send to server
            $.ajax({
              type: "POST",
-             url: "http://127.0.0.1:5000/email",
+             url: "http://54.215.131.148:5000/email",
              data: data,
              success: function(result) {
                console.log(result)
                $('#myModal').modal(options)
+               _gas.push(['_trackEvent', 'Email', 'Send', 'send email']);
              }
            });
         });
