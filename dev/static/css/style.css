@@ -40,7 +40,7 @@ h1 {
 }
 #home-page {
   background: url('../img/Bart_0656F.wv.jpg') no-repeat;
-  background-position: left bottom;
+  background-position: left;
 }
 #about-page { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
@@ -66,7 +66,7 @@ h1 {
   background-position: left bottom;
     
 }
-#contact-page .main-title {
+#contact-page .main-title, #home-page .main-title {
     padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -133,15 +133,6 @@ h1 {
     linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
     background-size: 70px 120px;
 }
-#reel-page{
-    background-color: rgba(109, 105, 92, 0.6);
-    background-image:
-    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-    background-size: 70px 120px;
-}
 #nav .title {
   color: white;
   position: relative;
@@ -150,7 +141,8 @@ h1 {
 }
 
 #nav .nav{
-  float: right;
+    margin: 0 33.3%;
+    width: 33.3%;
 }
 #nav .active a {
   background-color: inherit;
@@ -159,7 +151,7 @@ h1 {
   background-color: rgba(0,0,0,0.5)
 }
 .thumbnail .caption {
-  height: 250px;
+  height: 200px;
 }
 .thumbnail .project-title {
   position: relative;
@@ -196,7 +188,7 @@ h1 {
 }
 
 .art-header-inner {
-    margin-top: 250px;
+    margin-top: 5%;
   }
 
 .reel-photo {
