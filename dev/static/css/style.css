@@ -38,18 +38,20 @@ body {
 h1 {
   font-family: copaseptic !important;
 }
-#home-page {
+.asdfasdfasdfa {
   background: url('../img/Bart_0656F.wv.jpg') no-repeat;
-  background-position: left;
+  background-position: left bottom;
+  height: 100%;
 }
 #about-page { font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
   background-position: 650px bottom;
 }
+
 #reel-page, #about-page, #works-page, #contact-page, #home-page {
-	height: 1000px;
+  min-height: 500px;
   min-width: 1000px;
-	width:100%;
+  width:100%;
   border-bottom: 3px solid rgba(0,0,0,0.8);
   background-attachment: fixed;
   padding-top: 15px;

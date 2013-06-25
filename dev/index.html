@@ -44,6 +44,7 @@
         })();
         
       $(document).ready(function() {
+              $('#home-page').height($(window).height())
 
         $("#home-page").alert()
         $('#nav a').smoothScroll({ easing: 'linear'});    
@@ -123,9 +124,11 @@
 
 
     <!-- page 1: header page -->
-    <header id="home-page" class="art-header">
+    <div id="home-page" class="art-header">
+        <div class="asdfasdfasdfa">
         <h1 class="main-title art-header-inner"> BARTLEY TAYLOR</h1>
-    </header>
+        </div>
+    </div>
 
     <!-- page 2: about page -->
     <div id="about-page" class="row-fluid ">
