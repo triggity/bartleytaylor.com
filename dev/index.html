@@ -18,7 +18,7 @@
         <script type="text/javascript" src="static/js/app.js"></script>
         
     </head>
-    <body data-spy="scroll" data-target="#nav">
+    <body data-spy="scroll" data-target=".navbar">
 
     <script type="text/javascript">
 
@@ -104,9 +104,10 @@
     </script>
              
 
-    <div id="nav"class="navbar navbar-inverse navbar-fixed-top">
+    <div id="nav" class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
-            <!-- <a href="#home-page"><span class="title">BartleyTaylor.com</span></a> -->
+            <div class="container">
+                <div class="nav-collapse">
             <ul class="nav">
                 <li >
                     <a data-name="home-page" href="#home-page">Home</a>
@@ -124,7 +125,9 @@
                     <a data-name="contact-page" href="#contact-page">Contact</a>
                 </li>
             </ul>
-        </div>
+                </div><!-- /.nav-collapse -->
+            </div>
+        </div><!-- /navbar-inner -->
     </div>
 
 
