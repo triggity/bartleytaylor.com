@@ -22,78 +22,83 @@
 
     <script type="text/javascript">
 
-       var _gas = _gas || [];
-       _gas.push(['_setAccount', 'UA-20917644-1']);
-       _gas.push(['_setDomainName', 'bartleytaylor.com']); 
-       _gas.push(['_trackPageview']);
-       _gas.push(['_gasTrackForms']);
-       _gas.push(['_gasTrackOutboundLinks']);
-       _gas.push(['_gasTrackMaxScroll']);
-       _gas.push(['_gasTrackDownloads']);
-       _gas.push(['_gasTrackYoutube', {force: true}]);
-       _gas.push(['_gasTrackVimeo', {force: true}]);
-       _gas.push(['_gasTrackMailto']);
+      var _gas = _gas || [];
+      _gas.push(['_setAccount', 'UA-20917644-1']);
+      _gas.push(['_setDomainName', 'bartleytaylor.com']); 
+      _gas.push(['_trackPageview']);
+      _gas.push(['_gasTrackForms']);
+      _gas.push(['_gasTrackOutboundLinks']);
+      _gas.push(['_gasTrackMaxScroll']);
+      _gas.push(['_gasTrackDownloads']);
+      _gas.push(['_gasTrackYoutube', {force: true}]);
+      _gas.push(['_gasTrackVimeo', {force: true}]);
+      _gas.push(['_gasTrackMailto']);
 
-       (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-        })();
-        
-      $(document).ready(function() {
-              $('#home-page').height($(window).height())
+      (function() {
+       var ga = document.createElement('script');
+       ga.type = 'text/javascript';
+       ga.async = true;
+       ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min.js';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(ga, s);
+       })();
+       
+        $(document).ready(function() {
+             var windowHeight = $(window).height();
+             $('#home-page').height(windowHeight);
+             $('#about-page').height(windowHeight);
+             $('#reel-page').height(windowHeight);
+             $('#works-page').height(windowHeight);
+             $('#contact-page').height(windowHeight);
 
-        $("#home-page").alert()
-        $('#nav a').smoothScroll({ easing: 'linear'});    
+       $("#home-page").alert()
+       $('#nav a').smoothScroll({ easing: 'linear'});    
 
-        //logging inpage nav clicks
-        $("#nav a").click(function() {
-          console.log($(this).attr("data-name"));
-          _gas.push(['_trackPageview',$(this).attr("data-name") ]);
-        })
+       //logging inpage nav clicks
+       $("#nav a").click(function() {
+         console.log($(this).attr("data-name"));
+         _gas.push(['_trackPageview',$(this).attr("data-name") ]);
+       })
 
-        //validation of form fields
-        $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+       //validation of form fields
+       $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 
-        //submit email from form
-        $(".contact-form").on("submit", function(event) {
-            event.preventDefault()
-            
-           console.log("garthering email resources")
-           console.log($('form').serialize())
-           //gather data
-           data = {
-             'email': $('.email-field').val(),
-             'name': $('.name-field').val(),
-             'text': $('.text-area-field').val()
-           }
-
-           //send to server
-           $.ajax({
-             type: "POST",
-             url: "http://54.215.131.148:5000/email",
-             data: data,
-             success: function(result) {
-               console.log(result)
-               //$('#myModal').modal(options)
-               _gas.push(['_trackEvent', 'Email', 'Send', 'send email']);
-             }
-           });
-        });
-
-
-        //fancybox opening of images
-        $('.fancybox-media').fancybox({
-          openEffect  : 'fade',
-          closeEffect : 'none',
-          helpers : {
-            media : {},
-            title : { type : 'inside'}
+       //submit email from form
+       $(".contact-form").on("submit", function(event) {
+           event.preventDefault()
+           
+          console.log("garthering email resources")
+          console.log($('form').serialize())
+          //gather data
+          data = {
+            'email': $('.email-field').val(),
+            'name': $('.name-field').val(),
+            'text': $('.text-area-field').val()
           }
-        });
+
+          //send to server
+          $.ajax({
+            type: "POST",
+            url: "http://54.215.131.148:5000/email",
+            data: data,
+            success: function(result) {
+              console.log(result)
+              //$('#myModal').modal(options)
+              _gas.push(['_trackEvent', 'Email', 'Send', 'send email']);
+            }
+          });
+       });
+
+
+       //fancybox opening of images
+       $('.fancybox-media').fancybox({
+         openEffect  : 'fade',
+         closeEffect : 'none',
+         helpers : {
+           media : {},
+           title : { type : 'inside'}
+         }
+       });
 
       });
     </script>
@@ -124,40 +129,43 @@
 
 
     <!-- page 1: header page -->
-    <div id="home-page" class="art-header">
-        <div class="asdfasdfasdfa">
+    <div id="home-page" class="art-header row-fluid">
+        <div class="div-inner-holder">
         <h1 class="main-title art-header-inner"> BARTLEY TAYLOR</h1>
         </div>
     </div>
 
     <!-- page 2: about page -->
     <div id="about-page" class="row-fluid ">
+        <div class="div-inner-holder">
         <div class="span10 offset1">    
             <h1 class="main-title "> ABOUT</h1>
 
 
             <div class="about-text span6">
+
                 <p class="first-line">
-                    Hey! I'm Bartley, or Bart, It's strange to say my own full first name. Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
+                Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
+
                 </p>
                 <p>
-                    I was born and raised in this <strike>shitty </strike>great city of Los Angeles.
-                    I knew from a young age that I wanted to make movies - rather, tell stories.
-                    I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed.
-                    That naturally evolved into a love of cinema and actors.
-                    I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors as opposed to being one.
-                    I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions./
-                    Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients. Now <strike>starving</strike> operating as a freelance director, I am constantly looking to expand my horizons as a creative force with in the industry. 
+                I was born and raised in Los Angeles and from a young age I knew I wanted to tell stories for a living. I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed. That naturally evolved into a love of film and actors. In fact, I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors. I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions. Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients. Now operating as a freelance director, I am constantly looking to work with new people and expand my horizons as a creative force with in the industry.
+
                 </p>
                 <p>
-                    When I'm not wracking my brain with how to stay relevant and getting another gig, I'm usually outside with my dogs, having brunch with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others, life begins at the end of your comfort zone.
+                When I'm not wracking my brain with how to stay relevant and getting the next gig, I'm usually outside with my dogs, hiking with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others. 
                 </p>
+                <p>
+                Life begins at the end of your comfort zone.
+
             </div>  
         </div>
     </div>
+</div>
 
     <!-- page 3: reel page -->
     <div id="reel-page" class="row-fluid">
+        <div class="div-inner-holder">
         <div class="span12">    
             <h1 class="main-title">REEL</h1>
                
@@ -168,9 +176,11 @@
 
         </div>
     </div>
+    </div>
 
     <!-- page 4: works page -->
-    <div id="works-page" class="row">
+    <div id="works-page" class="row-fluid">
+        <div class="div-inner-holder">
         <!--<div class="span12"> -->   
         <h1 class="main-title">  SELECTED WORK</h1>
 
@@ -221,11 +231,13 @@
         </ul>
      
     </div>
+</div>
 
 
 
     <!-- page 5: contact page -->
     <div id="contact-page" class="row-fluid">
+        <div class="div-inner-holder">
         <div class="span12">    
             <h1 class="main-title"> CONTACT</h1>
 
@@ -302,6 +314,7 @@
             </div>
 
         </div>
+    </div>
     </div>
 
 </body>
