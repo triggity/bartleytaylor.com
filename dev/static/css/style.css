@@ -129,6 +129,7 @@ h1 {
   font-size: 30px; 
   margin-bottom: 25px;
 }
+/* for background texture on nav */
 #nav .navbar-inner{
   background-color: rgba(109, 105, 92, 1);
   background-image:
@@ -144,6 +145,8 @@ h1 {
   top: 10px;
   margin-left: 10px;
 }
+
+
 
 #nav .nav{
   margin: 0 33.3%;
