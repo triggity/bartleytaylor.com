@@ -40,7 +40,7 @@ h1 {
 }
 
 #reel-page, #about-page, #works-page, #contact-page, #home-page {
-  min-height: 500px;
+  min-height: 1000px;
   min-width: 1000px;
   width:100%;
   border-bottom: 3px solid rgba(0,0,0,0.8);
@@ -58,7 +58,8 @@ h1 {
 #about-page .div-inner-holder{ 
   font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
-  background-position: 55% bottom;
+  background-position: 300px bottom;
+  min-height: 1000px;
 }
 
 #reel-page .div-inner-holder{ background: #fff;}	

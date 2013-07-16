@@ -44,12 +44,13 @@
        })();
        
         $(document).ready(function() {
-             var windowHeight = $(window).height();
-             $('#home-page').height(windowHeight);
-             $('#about-page').height(windowHeight);
-             $('#reel-page').height(windowHeight);
-             $('#works-page').height(windowHeight);
-             $('#contact-page').height(windowHeight);
+          var windowHeight = $(window).height();
+          var pages = ['#home-page', '#reel-page', '#about-page', '#works-page', '#contact-page' ]
+          for (page in pages) {
+            if ($(page).height() < windowHeight) {
+              $(page).height(windowHeight);
+            }     
+          } 
 
        $("#home-page").alert()
        $('#nav a').smoothScroll({ easing: 'linear'});    
@@ -132,14 +133,14 @@
 
 
     <!-- page 1: header page -->
-    <div id="home-page" class="art-header row-fluid">
+    <div id="home-page" class="art-header row">
         <div class="div-inner-holder">
         <h1 class="main-title art-header-inner"> BARTLEY TAYLOR</h1>
         </div>
     </div>
 
     <!-- page 2: about page -->
-    <div id="about-page" class="row-fluid ">
+    <div id="about-page" class="row ">
         <div class="div-inner-holder">
         <div class="span10 offset1">    
             <h1 class="main-title "> ABOUT</h1>
@@ -167,7 +168,7 @@
 </div>
 
     <!-- page 3: reel page -->
-    <div id="reel-page" class="row-fluid">
+    <div id="reel-page" class="row">
         <div class="div-inner-holder">
         <div class="span12">    
             <h1 class="main-title">REEL</h1>
@@ -182,7 +183,7 @@
     </div>
 
     <!-- page 4: works page -->
-    <div id="works-page" class="row-fluid">
+    <div id="works-page" class="row">
         <div class="div-inner-holder">
         <!--<div class="span12"> -->   
         <h1 class="main-title">  SELECTED WORK</h1>
@@ -239,7 +240,7 @@
 
 
     <!-- page 5: contact page -->
-    <div id="contact-page" class="row-fluid">
+    <div id="contact-page" class="row">
         <div class="div-inner-holder">
         <div class="span12">    
             <h1 class="main-title"> CONTACT</h1>
