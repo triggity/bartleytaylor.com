@@ -58,7 +58,7 @@ h1 {
 #about-page .div-inner-holder{ 
   font-family: champagne; 
   background: url('../img/Bart_0391F.wv.jpg') no-repeat;
-  background-position: 300px bottom;
+  background-position: 500px bottom;
   min-height: 1000px;
 }
 
@@ -162,6 +162,17 @@ h1 {
 }
 .thumbnail .caption {
   height: 200px;
+  position: relative;
+}
+.caption .action-buttons{
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+}
+.caption a {
+  float: left;
+  margin: 5px;
+
 }
 .thumbnail .project-title {
   position: relative;
