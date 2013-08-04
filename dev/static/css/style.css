@@ -74,6 +74,7 @@ h1 {
 }
 #contact-page .main-title, #home-page .main-title {
   padding-bottom: 15px;
+  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
