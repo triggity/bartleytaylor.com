@@ -40,7 +40,7 @@ h1 {
 }
 
 #reel-page, #about-page, #works-page, #contact-page, #home-page {
-  min-height: 1000px;
+  min-height: 900px;
   min-width: 1000px;
   width:100%;
   border-bottom: 3px solid rgba(0,0,0,0.8);
@@ -49,11 +49,12 @@ h1 {
 }
 .div-inner-holder {
   height: 100%;
-  min-height: 1000px;
+  min-height: 900px;
 }
 #home-page .div-inner-holder {
   background: url('../img/Bart_0656F.wv.jpg') no-repeat;
   background-position: left bottom;
+  padding-top: 40px;
 }
 #about-page .div-inner-holder{ 
   font-family: champagne; 
@@ -69,12 +70,11 @@ h1 {
 }
 #contact-page .div-inner-holder{ 
   background: url('../img/Bart_0580F.wv.jpg') no-repeat;
-  background-position: left bottom;
+  background-position: -100px bottom;
 
 }
 #contact-page .main-title, #home-page .main-title {
   padding-bottom: 15px;
-  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
