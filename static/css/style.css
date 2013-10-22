@@ -165,10 +165,12 @@ h1 {
   height: 200px;
   position: relative;
 }
-.caption .action-buttons{
-  position: absolute;
-  bottom: 0;
-  right: 0; 
+.action-buttons {
+  height: 30px;
+}
+.action-buttons > a{
+  margin: 0 10px;
+  float: right;
 }
 .caption a {
   float: left;
@@ -179,6 +181,9 @@ h1 {
   position: relative;
   top: 100px;
   text-align: center;
+}
+.thumbnail > img {
+  height: 160px;
 }
 
 .projects-presentation {
