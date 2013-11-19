@@ -45,7 +45,7 @@
        
         $(document).ready(function() {
           var windowHeight = $(window).height();
-          var pages = ['#home-page', '#reel-page', '#about-page', '#works-page', '#contact-page' ]
+          var pages = ['#home-page', '#reel-page', '#works-page', '#about-page', '#contact-page' ]
           for (page in pages) {
             if ($(page).height() < windowHeight) {
               $(page).height(windowHeight);
@@ -113,14 +113,14 @@
                 <li >
                     <a data-name="home-page" href="#home-page">Home</a>
                 </li>
-                <li >
-                    <a data-name="about-page" href="#about-page">About</a>
-                </li>
                 <li>
                     <a data-name="reel-page" href="#reel-page">Reel</a>
                 </li>
                 <li>
                     <a data-name="works-page" href="#works-page">Selected Work</a>
+                </li>
+                <li >
+                    <a data-name="about-page" href="#about-page">About</a>
                 </li>
                 <li>
                     <a data-name="contact-page" href="#contact-page">Contact</a>
@@ -139,33 +139,6 @@
         </div>
     </div>
 
-    <!-- page 2: about page -->
-    <div id="about-page" class="row-fluid ">
-        <div class="div-inner-holder">
-        <div class="span10 offset1">    
-            <h1 class="main-title "> ABOUT</h1>
-
-
-            <div class="about-text span6">
-
-                <p class="first-line">
-                Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
-
-                </p>
-                <p>
-                I was born and raised in Los Angeles and from a young age I knew I wanted to tell stories for a living. I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed. That naturally evolved into a love of film and actors. In fact, I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors. I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions. Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients. Now operating as a freelance director, I am constantly looking to work with new people and expand my horizons as a creative force with in the industry.
-
-                </p>
-                <p>
-                When I'm not wracking my brain with how to stay relevant and getting the next gig, I'm usually outside with my dogs, hiking with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others. 
-                </p>
-                <p>
-                Life begins at the end of your comfort zone.
-
-            </div>  
-        </div>
-    </div>
-</div>
 
     <!-- page 3: reel page -->
     <div id="reel-page" class="row">
@@ -267,6 +240,33 @@
         </div>
       </div>
 
+    <!-- page 2: about page -->
+    <div id="about-page" class="row-fluid ">
+        <div class="div-inner-holder">
+        <div class="span10 offset1">    
+            <h1 class="main-title "> ABOUT</h1>
+
+
+            <div class="about-text span6">
+
+                <p class="first-line">
+                Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
+
+                </p>
+                <p>
+                I was born and raised in Los Angeles and from a young age I knew I wanted to tell stories for a living. I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed. That naturally evolved into a love of film and actors. In fact, I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors. I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions. Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients. Now operating as a freelance director, I am constantly looking to work with new people and expand my horizons as a creative force with in the industry.
+
+                </p>
+                <p>
+                When I'm not wracking my brain with how to stay relevant and getting the next gig, I'm usually outside with my dogs, hiking with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others. 
+                </p>
+                <p>
+                Life begins at the end of your comfort zone.
+
+            </div>  
+        </div>
+    </div>
+</div>
 
 
     <!-- page 5: contact page -->
