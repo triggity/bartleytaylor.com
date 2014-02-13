@@ -1,0 +1,61 @@
+
+.thumbnail:hover {
+  background-color: rgba(0,0,0,0.5)
+}
+.thumbnail .caption {
+  height: 200px;
+  position: relative;
+}
+.action-buttons {
+  height: 30px;
+}
+.action-buttons > a{
+  margin: 0 10px;
+  float: right;
+}
+.caption a {
+  float: left;
+  margin: 5px;
+
+}
+.thumbnail .project-title {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+.thumbnail > img {
+  height: 160px;
+}
+
+.contact-form {
+  margin: 50px auto;
+  width: 50%;
+}
+#intro {
+  background: url('../img/Bart_0656F.wv.jpg') no-repeat;
+  background-position: left bottom;
+}
+#contact{ 
+  background: url('../img/Bart_0580F.wv.jpg') no-repeat;
+  background-position: -100px bottom;
+
+}
+#selectedwork { 
+  background: url('../img/paper_fibers.png');
+}
+#about { 
+  background: url('../img/Bart_0391F.wv.jpg') no-repeat;
+  background-position: 500px bottom;
+}
+#selectedwork, #about, #contact, #reel {
+  padding-top: 50px;
+}
+.reel-intro {
+  margin-top: 50px;
+}
+#selectedwork > .container {
+  margin-top: 20px;
+}
+#contact .contact-list {
+  margin-top: 50px;
+}
