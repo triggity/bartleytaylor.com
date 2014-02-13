@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Start Bootstrap - Scrolling Nav</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav center">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#reel">Reel</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#selectedwork">Selected Work</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scrolling Nav</h1>
+                    <div class="page-scroll">
+                        <a class="btn btn-default" href="#about">Click me!</a>
+                    </div>
+                    <br>
+                    <p>This demo is the same sort of scrolling navigation menu we use in our <a href="http://startbootstrap.com/grayscale.php">Grayscale theme</a>. Whenever you want to use the page scrolling feature, make sure the link points to an ID (<code>#about</code> for example), and that the parent of the link has the class <code>.page-scroll</code>. See how the button above and the menu bar links are formatted for a working example.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reel" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Reel</h1>
+                      <div class="reel-intro">
+                        <iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="selectedwork" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Selected Work</h1>
+                    <ul class="thumbnails span14">
+                      <!-- thunmbnail type 2 -->
+                      <li class="span4">
+                        <div class="thumbnail">
+                          <img src="static/img/m83.png" alt="M83">
+                          <div class="caption">
+                            <h3>M83: Intro</h3>
+                            <p>1st Assistant Director</p>
+                          </div>
+                          <div class="action-buttons">
+                            <a href="https://vimeo.com/75809748" class="btn fancybox-media" title="M83: Intro" type="button"> Play </a>
+                            <a href="https://vimeo.com/75809748" class="btn" type="button"> Info</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="span4">
+                        <div class="thumbnail">
+                          <img src="static/img/Helen.png" alt="Helen: A Great Old Broad">
+                          <div class="caption">
+                            <h3>Helen: A Great Old Broad</h3>
+                            <p>Writer | Director | Producer</p>
+                            <p>Best Short Film Nominee Lake Arrowhead Film Festival</p>
+                          </div>
+                          <div class="action-buttons">
+                            <a href="https://vimeo.com/64046284" class="btn fancybox-media" title="Helen: A Great Old Broad" type="button"> Play </a>
+                            <a href="https://vimeo.com/64046284" class="btn" type="button"> Info</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="span4">
+                        <div class="thumbnail">
+                          <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
+                          <div class="caption">
+                            <h3>Walk The Moon | Next In Line</h3>
+                            <p>Director | Producer</p>
+                          </div>
+                            <div class="action-buttons">
+                              <a href="http://vimeo.com/64045082" class="btn fancybox-media" title="Walk The Moon" type="button"> Play </a>
+                              <a href="https://vimeo.com/64045082" class="btn" type="button"> Info</a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="span4">
+                        <div class="thumbnail">
+                          <img src="static/img/RockyRoad.png" alt="Rocky Road">
+                          <div class="caption">
+                            <h3>Rocky Road</h3>
+                            <p>Writer | Director | Producer</p>
+                            <p>16mm Short Film | Official Selection Lake Arrowhead Film Festival</p>
+                          </div>
+                            <div class="action-buttons">
+                              <a href="https://vimeo.com/64336984" class="btn fancybox-media" title="Rocky Road" type="button"> Play </a>
+                              <a href="https://vimeo.com/64336984" class="btn" type="button"> Info</a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="span4">
+                        <div class="thumbnail">
+                          <img src="static/img/SmellyProof.png" alt="Smelly Proof">
+                          <div class="caption">
+                            <h3>Smelly Proof</h3>
+                            <p>Director | Producer</p>
+                            <p>Official Product Commercial</p>
+                          </div>
+                            <div class="action-buttons">
+                              <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" title="Smelly Proof" type="button"> Play </a>
+                              <a href="https://vimeo.com/18764160" class="btn" type="button"> Info</a>
+                            </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
