@@ -260,13 +260,28 @@
     <script src="static/js/jquery-2.1.0.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
     <script src="static/js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="static/js/scrolling-nav.js"></script>
-
     <script type="text/javascript" src="static/js/jquery.fancybox.js?v=2.1.5"></script>
     <script type="text/javascript" src="static/js/jquery.fancybox-media.js?v=1.0.6"></script>
     <script type="text/javascript" src="static/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="static/js/scrolling-nav.js"></script>
+    <script>
+      $(function() {
+       //fancybox opening of images
+       $('.fancybox-media').fancybox({
+         openEffect  : 'fade',
+         closeEffect : 'none',
+         helpers : {
+           media : {},
+           title : { type : 'inside'}
+         }
+      
+        });
+      });
+      
+    </script>
+
 </body>
 
 </html>
