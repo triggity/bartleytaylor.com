@@ -7,50 +7,46 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bartley Taylor</title>
+    <title>Grayscale - Free One Page Theme for Bootstrap 3</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS -->
-    <link href="static/css/scrolling-nav.css" rel="stylesheet" type="text/css">
-    <link href="static/css/social-buttons-3.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="static/css/font-awesome-4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="static/css/jquery.fancybox.css?v=2.1.5"/>
-    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Bartley Taylor</a>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav center">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#reel">Reel</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#selectedwork">Selected Work</a>
-                    </li>
-                    <li class="page-scroll">
                         <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#download">Download</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -62,225 +58,77 @@
         <!-- /.container -->
     </nav>
 
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Bartley Taylor</h1>
-                    <div class="page-scroll">
-                      <a class="btn btn-default" href="#reel">Click me!</a>
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Grayscale</h1>
+                        <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
+                        <div class="page-scroll">
+                            <a href="#about" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reel" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Reel</h1>
-                      <div class="reel-intro">
-                        <iframe src="http://player.vimeo.com/video/64334125" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p class="reel-video"><a href="http://vimeo.com/64334125">Directing Reel | 2013</a> from <a href="http://vimeo.com/bartleytaylor">Bartley Taylor</a> on <a href="http://vimeo.com">Vimeo</a></p>
-                      </div>
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Grayscale</h2>
+                <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
+                <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
+                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="selectedwork" class="services-section">
-        <h1>Selected Work</h1>
-        <div class="container">
-            <div class="row">
-              <!-- thumbnail 1 -->
-              <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <img src="static/img/m83.png" alt="M83">
-                  <div class="caption">
-                    <h3>M83: Intro</h3>
-                    <p>1st Assistant Director</p>
-                  </div>
-                  <div class="action-buttons">
-                    <a href="https://vimeo.com/75809748" class="btn fancybox-media" title="M83: Intro" type="button"> Play </a>
-                    <a href="https://vimeo.com/75809748" class="btn" type="button"> Info</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- thumbnail 2 -->
-              <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <img src="static/img/Helen.png" alt="Helen: A Great Old Broad">
-                  <div class="caption">
-                    <h3>Helen: A Great Old Broad</h3>
-                    <p>Writer | Director | Producer</p>
-                    <p>Best Short Film Nominee Lake Arrowhead Film Festival</p>
-                  </div>
-                  <div class="action-buttons">
-                    <a href="https://vimeo.com/64046284" class="btn fancybox-media" title="Helen: A Great Old Broad" type="button"> Play </a>
-                    <a href="https://vimeo.com/64046284" class="btn" type="button"> Info</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- thumbnail 3 -->
-              <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <img src="static/img/WalkTheMoon.png" alt="Walk The Moon">
-                  <div class="caption">
-                    <h3>Walk The Moon | Next In Line</h3>
-                    <p>Director | Producer</p>
-                  </div>
-                    <div class="action-buttons">
-                      <a href="http://vimeo.com/64045082" class="btn fancybox-media" title="Walk The Moon" type="button"> Play </a>
-                      <a href="https://vimeo.com/64045082" class="btn" type="button"> Info</a>
-                    </div>
-                </div>
-              </div>
-
-              <!-- thumbnail 4 -->
-              <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <img src="static/img/RockyRoad.png" alt="Rocky Road">
-                  <div class="caption">
-                    <h3>Rocky Road</h3>
-                    <p>Writer | Director | Producer</p>
-                    <p>16mm Short Film | Official Selection Lake Arrowhead Film Festival</p>
-                  </div>
-                    <div class="action-buttons">
-                      <a href="https://vimeo.com/64336984" class="btn fancybox-media" title="Rocky Road" type="button"> Play </a>
-                      <a href="https://vimeo.com/64336984" class="btn" type="button"> Info</a>
-                    </div>
-                </div>
-              </div>
-
-              <!-- thumbnail 4 -->
-              <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <img src="static/img/SmellyProof.png" alt="Smelly Proof">
-                  <div class="caption">
-                    <h3>Smelly Proof</h3>
-                    <p>Director | Producer</p>
-                    <p>Official Product Commercial</p>
-                  </div>
-                    <div class="action-buttons">
-                      <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" title="Smelly Proof" type="button"> Play </a>
-                      <a href="https://vimeo.com/18764160" class="btn" type="button"> Info</a>
-                    </div>
-                </div>
-              </div>
-
-
-
-
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p>feedback@startbootstrap.com</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="about" class="contact-section">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <h1>About</h1>
-                <blockquote>
-
-                  <p class="first-line">
-                    Instead of writing some 3rd person biography about myself, I'll just simply tell you a few things about me and what I love to do.
-
-                  </p>
-                  <p>
-                    I was born and raised in Los Angeles and from a young age I knew I wanted to tell stories for a living. I've been fascinated by tall tales and characters ever since I was a little boy and my parents would read me R.L. Stein's 'Goosebumps' before bed. That naturally evolved into a love of film and actors. In fact, I thought I wanted to be an actor so I studied professionally for 2 years, but that quickly morphed into a desire to be behind the camera and working WITH actors. I began writing and shooting my own stories at the age of 13 and a few years later starting a company called C-41 Productions. Under that label I wrote, produced, and directed short films, commercials, music videos, and internet content for creative clients. Now operating as a freelance director, I am constantly looking to work with new people and expand my horizons as a creative force with in the industry.
-
-                  </p>
-                  <p>
-                    When I'm not wracking my brain with how to stay relevant and getting the next gig, I'm usually outside with my dogs, hiking with my friends on the weekends, snowboarding, traveling, and of course always watching the latest cinematic creations of others. 
-                  </p>
-                  <p>
-                    Life begins at the end of your comfort zone.
-
-                  </blockquote>  
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <h1>Contact Section</h1>
-                <div class="contact-list">
-                  <a href="http://www.facebook.com/bartley.taylor1" role="button" class="btn btn-facebook"><i class="fa fa-facebook"></i> | Facebook</a>
-                  <a href="https://twitter.com/BartleyTaylor" role="button" class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</a>
-                  <a href="http://instagram.com/bartleytaylor" role="button" class="btn btn-instagram"><i class="fa fa-camera-retro"></i> | Instagram</a>
-                  <a href="http://www.imdb.com/name/nm3513287/" role="button" class="btn btn-weibo"><i class="fa fa-imdb"></i> | Imdb</a>
-                </div>   
-                <div class="span6 offset6">
-                  <!-- Modal -->
-                  <!--
-                  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                      <h3 id="myModalLabel">Thank You</h3>
-                    </div>
-                    <div class="modal-body">
-                      <p>thank you for talking to us</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-                    </div>
-                  </div>
-                  -->
-
-                  <form class="contact-form" role="form ">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Name</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleMessage">Message</label>
-                      <textarea class="form-control" rows="3" id="exampleMessage"></textarea>
-                    </div>
-                      <label class="checkbox">
-                        We promise not to send you any crap 
-                      </label>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-        </div>
-    </section>
+    <div id="map"></div>
 
     <!-- Core JavaScript Files -->
-    <script src="static/js/jquery-2.1.0.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="static/js/jquery.fancybox.js?v=2.1.5"></script>
-    <script type="text/javascript" src="static/js/jquery.fancybox-media.js?v=1.0.6"></script>
-    <script type="text/javascript" src="static/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="static/js/scrolling-nav.js"></script>
-    <script>
-      $(function() {
-       //fancybox opening of images
-       $('.fancybox-media').fancybox({
-         openEffect  : 'fade',
-         closeEffect : 'none',
-         helpers : {
-           media : {},
-           title : { type : 'inside'}
-         }
-      
-        });
-      });
-      
-    </script>
+    <script src="js/grayscale.js"></script>
 
 </body>
 
