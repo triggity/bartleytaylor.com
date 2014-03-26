@@ -2,10 +2,16 @@
   margin-top: 100px;
 }
 .intro {
-  background: white;
+  background: url('../img/Bart-1.jpg') no-repeat;
+  background-color: white;
+  background-position: bottom;
   color: black
 }
 body {
   background-color: white;
   color: black;
+}
+.btn-circle {
+  color: black;
+  border-color: black;
 }
