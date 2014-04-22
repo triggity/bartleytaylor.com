@@ -27,7 +27,7 @@ $(function() {
   // Call Sly on frame
   $frame.sly({
     horizontal: 1,
-    itemNav: 'centered',
+    itemNav: 'basic',
     smart: 1,
     activateOn: 'click',
     mouseDragging: 1,
@@ -35,6 +35,7 @@ $(function() {
     releaseSwing: 1,
     startAt: 4,
     scrollBar: $wrap.find('.scrollbar'),
+    pagesBar: $wrap.find('.pages'),
     scrollBy: 1,
     speed: 300,
     elasticBounds: 1,
