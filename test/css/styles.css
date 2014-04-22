@@ -1,11 +1,18 @@
 .videos-holder {
   margin-top: 100px;
 }
-.intro {
+#contact {
   background: url('../img/Bart-1.jpg') no-repeat;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
   background-position: bottom;
   color: black
+}
+.intro {
+  background: rgba(0, 0, 0, 1);
+  color: white;
+}
+#contact .row {
+  min-height: 800px;
 }
 body {
   background-color: white;
