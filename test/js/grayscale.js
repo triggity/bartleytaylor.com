@@ -1,10 +1,10 @@
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
+    //if ($(".navbar").offset().top > 50) {
+    //    $(".navbar-fixed-top").addClass("top-nav-collapse");
+    //} else {
+    //    $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    //}
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -16,6 +16,38 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+//-------------------------------------------------------------
+//   Centered Navigation
+// -------------------------------------------------------------
+(function () {
+  var $frame = $('#videos-holder');
+  var $wrap  = $frame.parent();
+  console.log($wrap)
+
+  // Call Sly on frame
+  $frame.sly({
+    horizontal: 1,
+    itemNav: 'centered',
+    smart: 1,
+    activateOn: 'click',
+    mouseDragging: 1,
+    touchDragging: 1,
+    releaseSwing: 1,
+    startAt: 4,
+    scrollBar: $wrap.find('.scrollbar'),
+    scrollBy: 1,
+    speed: 300,
+    elasticBounds: 1,
+    easing: 'easeOutExpo',
+    dragHandle: 1,
+    dynamicHandle: 1,
+    clickBar: 1,
+
+    // Buttons
+    prev: $wrap.find('.prev'),
+    next: $wrap.find('.next')
+  });
+}());
 });
 
 //Google Map Skin - Get more at http://snazzymaps.com/
