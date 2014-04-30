@@ -20,6 +20,7 @@
     <!-- Custom Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.fancybox.css?v=2.1.4"/>
 
 </head>
 
@@ -48,19 +49,29 @@
           <div class=" frame" id="videos-holder">
             <ul class="slidee">
               <li>
-                  <img src="img/m83-2.png" alt="M83">
+                  <a href="https://vimeo.com/75809748" class="fancybox-media">
+                    <img src="img/m83-2.png" alt="M83" >
+                  </a>
               </li>
               <li>
+                <a href="https://vimeo.com/64046284" class="btn fancybox-media" title="Helen: A Great Old Broad">
                   <img src="img/Helen.png" alt="Helen: A Great Old Broad">
+                </a>
               </li>
               <li>
+                <a href="http://vimeo.com/64045082" class="btn fancybox-media" title="Walk The Moon">
                   <img src="img/WalkTheMoon.png" alt="Walk The Moon">
+                </a>
               </li>
               <li>
+                <a href="https://vimeo.com/64336984" class="btn fancybox-media" title="Rocky Road">
                   <img src="img/RockyRoad.png" alt="Rocky Road">
+                </a>
               </li>
               <li>
+                <a href="http://player.vimeo.com/video/18764160" class="btn fancybox-media" title="Smelly Proof">
                   <img src="img/SmellyProof.png" alt="Smelly Proof">
+                </a>
               </li>
             
             </ul>
@@ -111,6 +122,23 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.4"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.5"></script>
+    <script>
+      $(function() {
+           //fancybox opening of images
+           $('.fancybox-media').fancybox({
+                        openEffect  : 'fade',
+                                 closeEffect : 'none',
+                                          helpers : {
+                                                     media : {},
+                                                                title : { type : 'inside'}
+                                                                         }
+                                                                                });
+          
+          });
+
+    </script>
 
 </body>
 
