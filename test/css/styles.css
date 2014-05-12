@@ -11,8 +11,11 @@
   background: white;
   color: black;
 }
-#contact .row {
-  min-height: 800px;
+#contact > .row {
+  min-height: 500px;
+}
+#contact {
+  padding-top: 100px;
 }
 body {
   background-color: white;
