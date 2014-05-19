@@ -6,6 +6,8 @@
   background-color: rgba(255, 255, 255, 0.6);
   background-position: bottom;
   color: black
+  padding-top: 100px;
+  padding-bottom: 250px;
 }
 .intro {
   background: white;
@@ -38,4 +40,13 @@ body {
 }
 .frame ul li.active {
   background: #333;
+}
+#map {
+  margin-top: 0px;
+}
+.contact-form {
+  margin-top: 15px;
+}
+.contact-form h4 {
+  margin-bottom: 5px;
 }
