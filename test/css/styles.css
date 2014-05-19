@@ -39,7 +39,7 @@ body {
   background: none;
 }
 .frame ul li.active {
-  background: #333;
+  background: none;
 }
 #map {
   margin-top: 0px;
