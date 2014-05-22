@@ -166,7 +166,21 @@
 
         $(".submit").click(function() {
             console.log("submitted");
-          })
+        })
+        var dothis = function() {
+          $(this).css('opacity','.5');
+          var a = $(this).attr('alt');
+          $(this).parent().append('<div class="title">' + a + '</div>');
+        }
+        $('ul.slidee li img').hover(
+          dothis,
+          function(){
+          $(this).css('opacity','1');
+          $(this).next().remove('.title');
+          }
+          );
+        var el = $('ul.slidee li img')
+        //dothis.apply(el[2]);
 
       });
 
