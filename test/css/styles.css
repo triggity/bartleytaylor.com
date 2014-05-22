@@ -65,3 +65,10 @@ position: relative;
   background: rgba(0,0,0,0.5);
   padding-top: 50px
 }
+#about {
+  padding-top: 100px;
+}
+.brand-heading {
+  height: 100px;
+  background: url('../img/proxy.jpeg') no-repeat;
+}
