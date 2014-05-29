@@ -33,7 +33,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h1 class="brand-heading"></h1>
+            <h1 class=""> Bartley Taylor</h1>
             <div class="page-scroll">
               <a href="#about" class="btn btn-circle">
                 <i class="fa fa-angle-double-down animated"></i>
@@ -48,8 +48,8 @@
           <div class=" frame" id="basic">
             <ul class="slidee">
               <li>
-                  <a href="https://vimeo.com/75809748" class="fancybox-media">
-                    <img src="img/m83-2.png" alt="M83" ></img>
+                  <a href="https://vimeo.com/96290324" class="fancybox-media">
+                    <img src="img/middleground.png" alt="Middle Ground" ></img>
                   </a>
               </li>
               <li>
@@ -167,16 +167,30 @@
         $(".submit").click(function() {
             console.log("submitted");
         })
+        var timeout;
         var dothis = function() {
-          $(this).css('opacity','.5');
-          var a = $(this).attr('alt');
-          $(this).parent().append('<div class="title">' + a + '</div>');
+          var _this = this;
+          if (timeout) {
+            clearTimeout(timeout);
+          }
+          timeout = setTimeout(function() {
+            $(_this).css('opacity','.5');
+            var a = $(_this).attr('alt');
+            $(_this).parent().append('<div class="title">' + a + '</div>');
+            
+          }, 500)
         }
         $('ul.slidee li img').hover(
           dothis,
           function(){
-          $(this).css('opacity','1');
-          $(this).next().remove('.title');
+          var _this = this;
+          //if (timeout) {
+          //  clearTimeout(timeout);
+          //  timeout = setTimeout(function() {
+              $(_this).css('opacity','1');
+              $(_this).next().remove('.title');
+            //}, 500)
+          //}
           }
           );
         var el = $('ul.slidee li img')
