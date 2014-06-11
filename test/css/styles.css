@@ -14,7 +14,7 @@
   color: black;
 }
 #contact > .row {
-  min-height: 500px;
+  min-height: 550px;
 }
 #contact {
   padding-top: 100px;
@@ -71,4 +71,8 @@ position: relative;
 .brand-heading {
   height: 100px;
   background: url('../img/proxy.jpeg') no-repeat;
+}
+
+.title-heading {
+  font-size: 44px; 
 }
