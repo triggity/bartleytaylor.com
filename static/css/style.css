@@ -34,12 +34,13 @@
 body {
 
   height: 100%;
+  background-color: none;
 }
 h1 {
   font-family: copaseptic !important;
 }
 
-#reel-page, #about-page, #works-page, #contact-page, #home-page {
+#reel-page, #about-page, #works-page, #home-page {
   min-height: 900px;
   min-width: 1000px;
   width:100%;
@@ -69,8 +70,11 @@ h1 {
   margin: 0 auto;
 }
 #contact-page .div-inner-holder{ 
+/*
   background: url('../img/Bart_0580F.wv.jpg') no-repeat;
   background-position: -100px bottom;
+  background: none;
+  */
 
 }
 #contact-page .main-title, #home-page .main-title {
@@ -80,6 +84,9 @@ h1 {
   width: 90%;
 }
 
+#contact-page .main-title {
+  color: white;
+}
 /* footer stuff */
 .footer {
   position: fixed;
@@ -281,4 +288,18 @@ h1 {
 }
 .controls input, .controls textarea {
   width: 250px;
+}
+#map {
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  bottom: -200px; 
+  left: 0; 
+  right: 0; 
+  z-index: 0;
+
+}
+#contact-page, #contact-page .div-inner-holder {
+  z-index: 100;
+  position: relative;
 }

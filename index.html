@@ -15,8 +15,10 @@
         <script src="static/js/lib/respond.min.js"></script>
 	    <script type="text/javascript" src="static/js/lib/jquery.fancybox-media.js?v=1.0.5"></script>
         <script src="static/js/lib/jqBootstrapValidation.js"></script>
-        <script type="text/javascript" src="static/js/app.js"></script>
+    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
         
+        <script type="text/javascript" src="static/js/app.js"></script>
     </head>
     <body data-spy="scroll" data-target=".navbar">
 
@@ -283,87 +285,89 @@
 
     <!-- page 5: contact page -->
     <div id="contact-page" class="row">
-        <div class="div-inner-holder">
-            <div class="container">
-        <div class="span12">    
+      <div class="div-inner-holder">
+        <div class="container">
+          <div class="span12">    
             <h1 class="main-title"> CONTACT</h1>
 
             <div class="span6 offset6 contact-list">
-                <li class="span12">
+              <li class="span12">
                 <a href="http://www.facebook.com/bartley.taylor1">
-                    <img src="static/img/icon-facebook.png" />
+                  <img src="static/img/icon-facebook.png" />
                 </a>
-                </li> 
-                <li class="span12 imdb">
+              </li> 
+              <li class="span12 imdb">
                 <a href="http://www.imdb.com/name/nm3513287/">
-                    <img src="static/img/icon-imdb.jpeg" />    
+                  <img src="static/img/icon-imdb.jpeg" />    
                 </a>
-                </li>
-                <li class="span12">
+              </li>
+              <li class="span12">
                 <a href="https://twitter.com/BartleyTaylor">
-                    <img src="static/img/icon-twitter.gif" />
+                  <img src="static/img/icon-twitter.gif" />
                 </a>
-                </li>
-                <li class="span12 instagram">
+              </li>
+              <li class="span12 instagram">
                 <a href="http://instagram.com/bartleytaylor">
-                    <img src="static/img/icon-instagram.png" />
+                  <img src="static/img/icon-instagram.png" />
                 </a>
-                </li>
+              </li>
             </div>   
             <div class="span6 offset6">
-                <!-- Modal -->
-                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h3 id="myModalLabel">Thank You</h3>
-                    </div>
-                    <div class="modal-body">
-                        <p>thank you for talking to us</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-                    </div>
+              <!-- Modal -->
+              <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Thank You</h3>
                 </div>
+                <div class="modal-body">
+                  <p>thank you for talking to us</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+              </div>
 
-                <form class="contact-form">
-                    <fieldset>
-                        <legend>Email Me</legend>
-                        <div class="control-group">
-                            <label class="control-label">Your Email &#42;</label>
-                            <div class="controls">
-                                <input type="email" value="john@somewhere.com"  placeholder="john@somewhere.com" class="email-field" required>
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
+              <form class="contact-form">
+                <fieldset>
+                  <legend>Email Me</legend>
+                  <div class="control-group">
+                    <label class="control-label">Your Email &#42;</label>
+                    <div class="controls">
+                      <input type="email" value="john@somewhere.com"  placeholder="john@somewhere.com" class="email-field" required>
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
 
-                        <div class="control-group">
-                            <label class="control-label">Your Name &#42;</label>
-                            <div class="controls">
-                                <input type="text" value="John Doe" placeholder="John Doe" class="name-field" required>
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
+                  <div class="control-group">
+                    <label class="control-label">Your Name &#42;</label>
+                    <div class="controls">
+                      <input type="text" value="John Doe" placeholder="John Doe" class="name-field" required>
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
 
-                        <div class="control-group">
-                            <label class="control-label">Message &#42;</label>
-                            <div class="controls">
-                                <textarea rows="3" placeholder="To Bart: " class="text-area-field" required>Bart, </textarea>
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
+                  <div class="control-group">
+                    <label class="control-label">Message &#42;</label>
+                    <div class="controls">
+                      <textarea rows="3" placeholder="To Bart: " class="text-area-field" required>Bart, </textarea>
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
 
-                        <label class="checkbox">
-                            We promise not to send you any crap 
-                        </label>
-                        <button type="submit" class="emailsubmit btn">Submit</button>
-                    </fieldset>
-                </form>
+                  <label class="checkbox">
+                    We promise not to send you any crap 
+                  </label>
+                  <button type="submit" class="emailsubmit btn">Submit</button>
+                </fieldset>
+              </form>
             </div>
 
+          </div>
         </div>
+      </div>
+      <div id="map" />
     </div>
-    </div>
-    </div>
+
 
 </body>
 </html>
